@@ -10,7 +10,7 @@ export default function Home() {
         <div>
           <p>
             This is a reference for board game cards. It is not affiliated with
-            any board game company.
+            any board game company. Like none.
           </p>
         </div>
       </footer>
