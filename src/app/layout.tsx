@@ -1,6 +1,6 @@
-import NavBar from '../components/NavBar'
+import NavBar from '@/components/NavBar'
 import type { Metadata } from 'next'
-import './globals.css' // Make sure to import your Tailwind CSS
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Board Game Card Reference',
