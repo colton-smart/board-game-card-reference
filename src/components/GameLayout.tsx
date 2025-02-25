@@ -1,5 +1,3 @@
-import NavBar from './NavBar'
-
 interface GameLayoutProps {
     children: React.ReactNode
 }
