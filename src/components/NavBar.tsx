@@ -15,6 +15,7 @@ const games = [
 
 const navigation = [
   { name: 'Home', href: '/' },
+  { name: 'Games', href: '/games' },
   { name: 'Contact', href: '/contact' },
 ]
 
@@ -26,7 +27,7 @@ export default function NavBar() {
   const pathname = usePathname()
 
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="navbar">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -67,8 +68,8 @@ export default function NavBar() {
                           href={item.href}
                           className={classNames(
                             isActive 
-                              ? 'bg-gray-900 text-white' 
-                              : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                              ? 'navbar a active' 
+                              : 'navbar a',
                             'rounded-md px-3 py-2 text-sm font-medium'
                           )}
                         >
@@ -76,48 +77,6 @@ export default function NavBar() {
                         </Link>
                       )
                     })}
-
-                    {/* Games dropdown */}
-                    <Menu as="div" className="relative">
-                      <Menu.Button
-                        className={classNames(
-                          pathname.startsWith('/games')
-                            ? 'bg-gray-900 text-white'
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'inline-flex items-center rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                      >
-                        Games
-                        <ChevronDownIcon className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
-                      </Menu.Button>
-                      <Transition
-                        as={Fragment}
-                        enter="transition ease-out duration-100"
-                        enterFrom="transform opacity-0 scale-95"
-                        enterTo="transform opacity-100 scale-100"
-                        leave="transition ease-in duration-75"
-                        leaveFrom="transform opacity-100 scale-100"
-                        leaveTo="transform opacity-0 scale-95"
-                      >
-                        <Menu.Items className="absolute left-0 z-10 mt-2 w-48 origin-top-left rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                          {games.map((game) => (
-                            <Menu.Item key={game.name}>
-                              {() => (
-                                <Link
-                                  href={game.href}
-                                  className={classNames(
-                                    pathname === game.href ? 'bg-gray-100 text-gray-900' : '',
-                                    'block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'
-                                  )}
-                                >
-                                  {game.name}
-                                </Link>
-                              )}
-                            </Menu.Item>
-                          ))}
-                        </Menu.Items>
-                      </Transition>
-                    </Menu>
                   </div>
                 </div>
               </div>
@@ -141,8 +100,8 @@ export default function NavBar() {
                     href={item.href}
                     className={classNames(
                       isActive 
-                        ? 'bg-gray-900 text-white' 
-                        : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        ? 'navbar a active' 
+                        : 'navbar a',
                       'block rounded-md px-3 py-2 text-base font-medium'
                     )}
                   >
@@ -159,8 +118,8 @@ export default function NavBar() {
                     href={game.href}
                     className={classNames(
                       pathname === game.href
-                        ? 'bg-gray-900 text-white'
-                        : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        ? 'navbar a active'
+                        : 'navbar a',
                       'block rounded-md px-3 py-2 text-base font-medium'
                     )}
                   >

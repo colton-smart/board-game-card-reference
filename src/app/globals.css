@@ -12,3 +12,32 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.navbar {
+  background-color: #004d40; /* Darker alpine green color */
+}
+
+.navbar a {
+  color: white; /* Default link color */
+}
+
+.navbar a:hover {
+  background-color: #005f50; /* Slightly lighter green on hover */
+}
+
+.navbar .active {
+  background-color: #00695c; /* Active link background */
+}
+
+.dropdown-menu {
+  background-color: #004d40; /* Same dark alpine green for dropdown */
+  color: white; /* Dropdown text color */
+}
+
+.dropdown-menu a {
+  color: white; /* Dropdown link color */
+}
+
+.dropdown-menu a:hover {
+  background-color: #005f50; /* Hover effect for dropdown links */
+}
