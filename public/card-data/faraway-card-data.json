@@ -1,695 +1,772 @@
 [
     {
-      "id": 0,
-      "daynight": "d",
-      "color": "N",
-      "production": "brg",
-      "requirement": null,
-      "reward": null,
-      "imgsrc": null
-    },
-    {
-      "id": 1,
-      "daynight": "d",
-      "color": "R",
-      "production": "br",
-      "requirement": null,
-      "reward": null,
-      "imgsrc": null
-    },
-    {
-      "id": 2,
-      "daynight": "d",
-      "color": "B",
-      "production": "bb",
-      "requirement": null,
-      "reward": null,
-      "imgsrc": null
-    },
-    {
-      "id": 3,
-      "daynight": "d",
-      "color": "G",
-      "production": null,
-      "requirement": null,
-      "reward": 4,
-      "imgsrc": null
-    },
-    {
-      "id": 4,
-      "daynight": "d",
-      "color": "R",
-      "production": "bg",
-      "requirement": null,
-      "reward": null,
-      "imgsrc": null
-    },
-    {
-      "id": 5,
-      "daynight": "d",
-      "color": "G",
-      "production": "r",
-      "requirement": null,
-      "reward": 2,
-      "imgsrc": null
-    },
-    {
-      "id": 6,
-      "daynight": "d",
-      "color": "B",
-      "production": "cb",
-      "requirement": null,
-      "reward": null,
-      "imgsrc": null
-    },
-    {
-      "id": 7,
-      "daynight": "d",
-      "color": "R",
-      "production": "rg",
-      "requirement": null,
-      "reward": null,
-      "imgsrc": null
-    },
-    {
-      "id": 8,
-      "daynight": "d",
-      "color": "G",
-      "production": "cr",
-      "requirement": null,
-      "reward": null,
-      "imgsrc": null
-    },
-    {
-      "id": 9,
-      "daynight": "d",
-      "color": "B",
-      "production": null,
-      "requirement": null,
-      "reward": 5,
-      "imgsrc": null
-    },
-    {
-      "id": 10,
-      "daynight": "d",
-      "color": "R",
-      "production": null,
-      "requirement": null,
-      "reward": "2*n",
-      "imgsrc": null
-    },
-    {
-      "id": 11,
-      "daynight": "d",
-      "color": "G",
-      "production": null,
-      "requirement": null,
-      "reward": "2*c",
-      "imgsrc": null
-    },
-    {
-      "id": 12,
-      "daynight": "d",
-      "color": "Y",
-      "production": "cg",
-      "requirement": null,
-      "reward": null,
-      "imgsrc": null
-    },
-    {
-      "id": 13,
-      "daynight": "d",
-      "color": "B",
-      "production": null,
-      "requirement": null,
-      "reward": "2*b",
-      "imgsrc": null
-    },
-    {
-      "id": 14,
-      "daynight": "d",
-      "color": "R",
-      "production": "g",
-      "requirement": null,
-      "reward": "2*n",
-      "imgsrc": null
-    },
-    {
-      "id": 15,
-      "daynight": "d",
-      "color": "G",
-      "production": "c",
-      "requirement": null,
-      "reward": "2*r",
-      "imgsrc": null
-    },
-    {
-      "id": 16,
-      "daynight": "d",
-      "color": "R",
-      "production": "r",
-      "requirement": null,
-      "reward": "2*r",
-      "imgsrc": null
-    },
-    {
-      "id": 17,
-      "daynight": "d",
-      "color": "B",
-      "production": "b",
-      "requirement": "rr",
-      "reward": "3*b",
-      "imgsrc": null
-    },
-    {
-      "id": 18,
-      "daynight": "d",
-      "color": "G",
-      "production": "r",
-      "requirement": null,
-      "reward": "10*s",
-      "imgsrc": null
-    },
-    {
-      "id": 19,
-      "daynight": "d",
-      "color": "R",
-      "production": "g",
-      "requirement": null,
-      "reward": "2*g",
-      "imgsrc": null
-    },
-    {
-      "id": 20,
-      "daynight": "n",
-      "color": "G",
-      "production": "c",
-      "requirement": "b",
-      "reward": "2*n",
-      "imgsrc": null
-    },
-    {
-      "id": 21,
-      "daynight": "n",
-      "color": "B",
-      "production": null,
-      "requirement": "bb",
-      "reward": 8,
-      "imgsrc": null
-    },
-    {
-      "id": 22,
-      "daynight": "n",
-      "color": "G",
-      "production": "c",
-      "requirement": null,
-      "reward": "1*c",
-      "imgsrc": null
-    },
-    {
-      "id": 23,
-      "daynight": "n",
-      "color": "R",
-      "production": "br",
-      "requirement": null,
-      "reward": "10*s",
-      "imgsrc": null
-    },
-    {
-      "id": 24,
-      "daynight": "n",
-      "color": "B",
-      "production": "b",
-      "requirement": "r",
-      "reward": "2*n",
-      "imgsrc": null
-    },
-    {
-      "id": 25,
-      "daynight": "n",
-      "color": "Y",
-      "production": null,
-      "requirement": null,
-      "reward": "2*(Y+G)",
-      "imgsrc": null
-    },
-    {
-      "id": 26,
-      "daynight": "n",
-      "color": "R",
-      "production": "r",
-      "requirement": null,
-      "reward": "3*g",
-      "imgsrc": null
-    },
-    {
-      "id": 27,
-      "daynight": "n",
-      "color": "Y",
-      "production": null,
-      "requirement": null,
-      "reward": "1*(Y+B)",
-      "imgsrc": null
-    },
-    {
-      "id": 28,
-      "daynight": "n",
-      "color": "R",
-      "production": "b",
-      "requirement": null,
-      "reward": "3*r",
-      "imgsrc": null
-    },
-    {
-      "id": 29,
-      "daynight": "n",
-      "color": "Y",
-      "production": "g",
-      "requirement": null,
-      "reward": "2*g",
-      "imgsrc": null
-    },
-    {
-      "id": 30,
-      "daynight": "n",
-      "color": "R",
-      "production": "b",
-      "requirement": null,
-      "reward": "2*b",
-      "imgsrc": null
-    },
-    {
-      "id": 31,
-      "daynight": "n",
-      "color": "Y",
-      "production": null,
-      "requirement": null,
-      "reward": "1*(Y+R)",
-      "imgsrc": null
-    },
-    {
-      "id": 32,
-      "daynight": "n",
-      "color": "R",
-      "production": "br",
-      "requirement": "bbb",
-      "reward": 7,
-      "imgsrc": null
-    },
-    {
-      "id": 33,
-      "daynight": "n",
-      "color": "Y",
-      "production": null,
-      "requirement": null,
-      "reward": "3*g",
-      "imgsrc": null
-    },
-    {
-      "id": 34,
-      "daynight": "n",
-      "color": "G",
-      "production": "r",
-      "requirement": "bb",
-      "reward": "3*r",
-      "imgsrc": null
-    },
-    {
-      "id": 35,
-      "daynight": "n",
-      "color": "Y",
-      "production": "r",
-      "requirement": null,
-      "reward": "1*s",
-      "imgsrc": null
-    },
-    {
-      "id": 36,
-      "daynight": "n",
-      "color": "R",
-      "production": null,
-      "requirement": "rr",
-      "reward": "4*g",
-      "imgsrc": null
-    },
-    {
-      "id": 37,
-      "daynight": "n",
-      "color": "Y",
-      "production": null,
-      "requirement": "g",
-      "reward": "3*n",
-      "imgsrc": null
-    },
-    {
-      "id": 38,
-      "daynight": "n",
-      "color": "G",
-      "production": "b",
-      "requirement": "rg",
-      "reward": "3*c",
-      "imgsrc": null
-    },
-    {
-      "id": 39,
-      "daynight": "n",
-      "color": "R",
-      "production": "bg",
-      "requirement": "rr",
-      "reward": 9,
-      "imgsrc": null
-    },
-    {
-      "id": 40,
-      "daynight": "n",
-      "color": "B",
-      "production": null,
-      "requirement": "brg",
-      "reward": "3*n",
-      "imgsrc": null
-    },
-    {
-      "id": 41,
-      "daynight": "d",
-      "color": "G",
-      "production": "g",
-      "requirement": "bbr",
-      "reward": "4*n",
-      "imgsrc": null
-    },
-    {
-      "id": 42,
-      "daynight": "d",
-      "color": "Y",
-      "production": null,
-      "requirement": "br",
-      "reward": "2*(Y+G)",
-      "imgsrc": null
-    },
-    {
-      "id": 43,
-      "daynight": "d",
-      "color": "B",
-      "production": "b",
-      "requirement": null,
-      "reward": "10*s",
-      "imgsrc": null
-    },
-    {
-      "id": 44,
-      "daynight": "d",
-      "color": "Y",
-      "production": null,
-      "requirement": "bg",
-      "reward": "2*(Y+B)",
-      "imgsrc": null
-    },
-    {
-      "id": 45,
-      "daynight": "d",
-      "color": "G",
-      "production": "b",
-      "requirement": "rrr",
-      "reward": 13,
-      "imgsrc": null
-    },
-    {
-      "id": 46,
-      "daynight": "d",
-      "color": "B",
-      "production": "c",
-      "requirement": "bbr",
-      "reward": 10,
-      "imgsrc": null
-    },
-    {
-      "id": 47,
-      "daynight": "d",
-      "color": "Y",
-      "production": null,
-      "requirement": "rg",
-      "reward": "2*(Y+R)",
-      "imgsrc": null
-    },
-    {
-      "id": 48,
-      "daynight": "d",
-      "color": "R",
-      "production": "r",
-      "requirement": null,
-      "reward": "3*b",
-      "imgsrc": null
-    },
-    {
-      "id": 49,
-      "daynight": "d",
-      "color": "B",
-      "production": "c",
-      "requirement": "bbg",
-      "reward": 12,
-      "imgsrc": null
-    },
-    {
-      "id": 50,
-      "daynight": "d",
-      "color": "Y",
-      "production": "b",
-      "requirement": "gg",
-      "reward": "4*G",
-      "imgsrc": null
-    },
-    {
-      "id": 51,
-      "daynight": "d",
-      "color": "B",
-      "production": "b",
-      "requirement": "bbbb",
-      "reward": 14,
-      "imgsrc": null
-    },
-    {
-      "id": 52,
-      "daynight": "d",
-      "color": "R",
-      "production": null,
-      "requirement": "bbb",
-      "reward": "4*r",
-      "imgsrc": null
-    },
-    {
-      "id": 53,
-      "daynight": "d",
-      "color": "Y",
-      "production": "r",
-      "requirement": "gg",
-      "reward": "4*R",
-      "imgsrc": null
-    },
-    {
-      "id": 54,
-      "daynight": "d",
-      "color": "G",
-      "production": "r",
-      "requirement": "gg",
-      "reward": "4*c",
-      "imgsrc": null
-    },
-    {
-      "id": 55,
-      "daynight": "d",
-      "color": "B",
-      "production": "bc",
-      "requirement": "rgg",
-      "reward": "3*b",
-      "imgsrc": null
-    },
-    {
-      "id": 56,
-      "daynight": "d",
-      "color": "Y",
-      "production": "g",
-      "requirement": "brr",
-      "reward": "4*B",
-      "imgsrc": null
-    },
-    {
-      "id": 57,
-      "daynight": "d",
-      "color": "R",
-      "production": null,
-      "requirement": "ggg",
-      "reward": "4*b",
-      "imgsrc": null
-    },
-    {
-      "id": 58,
-      "daynight": "d",
-      "color": "G",
-      "production": "c",
-      "requirement": "rrr",
-      "reward": "3*c",
-      "imgsrc": null
-    },
-    {
-      "id": 59,
-      "daynight": "d",
-      "color": "Y",
-      "production": "c",
-      "requirement": "brrr",
-      "reward": "3*(Y+R)",
-      "imgsrc": null
-    },
-    {
-      "id": 60,
-      "daynight": "d",
-      "color": "B",
-      "production": "c",
-      "requirement": "bbrr",
-      "reward": 16,
-      "imgsrc": null
-    },
-    {
-      "id": 61,
-      "daynight": "d",
-      "color": "G",
-      "production": "g",
-      "requirement": "rrrr",
-      "reward": 17,
-      "imgsrc": null
-    },
-    {
-      "id": 62,
-      "daynight": "d",
-      "color": "Y",
-      "production": "c",
-      "requirement": "ggg",
-      "reward": "3*(Y+B)",
-      "imgsrc": null
-    },
-    {
-      "id": 63,
-      "daynight": "d",
-      "color": "G",
-      "production": "c",
-      "requirement": "rrg",
-      "reward": 15,
-      "imgsrc": null
-    },
-    {
-      "id": 64,
-      "daynight": "d",
-      "color": "B",
-      "production": "c",
-      "requirement": "bbgg",
-      "reward": 18,
-      "imgsrc": null
-    },
-    {
-      "id": 65,
-      "daynight": "d",
-      "color": "Y",
-      "production": "c",
-      "requirement": "ggg",
-      "reward": "3*(Y+G)",
-      "imgsrc": null
-    },
-    {
-      "id": 66,
-      "daynight": "d",
-      "color": "B",
-      "production": null,
-      "requirement": "bbbb",
-      "reward": 20,
-      "imgsrc": null
-    },
-    {
-      "id": 67,
-      "daynight": "d",
-      "color": "G",
-      "production": "c",
-      "requirement": "rrgg",
-      "reward": 19,
-      "imgsrc": null
-    },
-    {
-      "id": 68,
-      "daynight": "d",
-      "color": "B",
-      "production": null,
-      "requirement": "bbbbb",
-      "reward": 24,
-      "imgsrc": null
-    },
-    {
-      "id": 69,
-      "daynight": "d",
-      "color": "R",
-      "production": "c",
-      "requirement": null,
-      "reward": "7*i",
-      "imgsrc": null
-    },
-    {
-      "id": 70,
-      "daynight": "d",
-      "color": "N",
-      "production": "c",
-      "requirement": null,
-      "reward": 6,
-      "imgsrc": null
-    },
-    {
-      "id": 71,
-      "daynight": "n",
-      "color": "G",
-      "production": "b",
-      "requirement": null,
-      "reward": "7*i",
-      "imgsrc": null
-    },
-    {
-      "id": 72,
-      "daynight": "n",
-      "color": "N",
-      "production": null,
-      "requirement": "rrrrr",
-      "reward": 26,
-      "imgsrc": null
-    },
-    {
-      "id": 73,
-      "daynight": "n",
-      "color": "Y",
-      "production": "r",
-      "requirement": "gggg",
-      "reward": "5*N",
-      "imgsrc": null
-    },
-    {
-      "id": 74,
-      "daynight": "n",
-      "color": "N",
-      "production": "g",
-      "requirement": null,
-      "reward": "7*i",
-      "imgsrc": null
-    },
-    {
-      "id": 75,
-      "daynight": "n",
-      "color": "B",
-      "production": "c",
-      "requirement": "bbbbbb",
-      "reward": 28,
-      "imgsrc": null
-    },
-    {
-      "id": 76,
-      "daynight": "n",
-      "color": "N",
-      "production": null,
-      "requirement": "bbrrgg",
-      "reward": "4*N",
-      "imgsrc": null
+        "id": 0,
+        "daynight": "d",
+        "color": "N",
+        "production": "brg",
+        "requirement": null,
+        "reward": null,
+        "imgsrc": null,
+        "from_below": true
+    },
+    {
+        "id": 1,
+        "daynight": "d",
+        "color": "R",
+        "production": "br",
+        "requirement": null,
+        "reward": null,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 2,
+        "daynight": "d",
+        "color": "B",
+        "production": "bb",
+        "requirement": null,
+        "reward": null,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 3,
+        "daynight": "d",
+        "color": "G",
+        "production": null,
+        "requirement": null,
+        "reward": 4,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 4,
+        "daynight": "d",
+        "color": "R",
+        "production": "bg",
+        "requirement": null,
+        "reward": null,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 5,
+        "daynight": "d",
+        "color": "G",
+        "production": "r",
+        "requirement": null,
+        "reward": 2,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 6,
+        "daynight": "d",
+        "color": "B",
+        "production": "cb",
+        "requirement": null,
+        "reward": null,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 7,
+        "daynight": "d",
+        "color": "R",
+        "production": "rg",
+        "requirement": null,
+        "reward": null,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 8,
+        "daynight": "d",
+        "color": "G",
+        "production": "cr",
+        "requirement": null,
+        "reward": null,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 9,
+        "daynight": "d",
+        "color": "B",
+        "production": null,
+        "requirement": null,
+        "reward": 5,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 10,
+        "daynight": "d",
+        "color": "R",
+        "production": null,
+        "requirement": null,
+        "reward": "2*n",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 11,
+        "daynight": "d",
+        "color": "G",
+        "production": null,
+        "requirement": null,
+        "reward": "2*c",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 12,
+        "daynight": "d",
+        "color": "Y",
+        "production": "cg",
+        "requirement": null,
+        "reward": null,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 13,
+        "daynight": "d",
+        "color": "B",
+        "production": null,
+        "requirement": null,
+        "reward": "2*b",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 14,
+        "daynight": "d",
+        "color": "R",
+        "production": "g",
+        "requirement": null,
+        "reward": "2*n",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 15,
+        "daynight": "d",
+        "color": "G",
+        "production": "c",
+        "requirement": null,
+        "reward": "2*r",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 16,
+        "daynight": "d",
+        "color": "R",
+        "production": "r",
+        "requirement": null,
+        "reward": "2*r",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 17,
+        "daynight": "d",
+        "color": "B",
+        "production": "b",
+        "requirement": "rr",
+        "reward": "3*b",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 18,
+        "daynight": "d",
+        "color": "G",
+        "production": "r",
+        "requirement": null,
+        "reward": "10*s",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 19,
+        "daynight": "d",
+        "color": "R",
+        "production": "g",
+        "requirement": null,
+        "reward": "2*g",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 20,
+        "daynight": "n",
+        "color": "G",
+        "production": "c",
+        "requirement": "b",
+        "reward": "2*n",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 21,
+        "daynight": "n",
+        "color": "B",
+        "production": null,
+        "requirement": "bb",
+        "reward": 8,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 22,
+        "daynight": "n",
+        "color": "G",
+        "production": "c",
+        "requirement": null,
+        "reward": "1*c",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 23,
+        "daynight": "n",
+        "color": "R",
+        "production": "br",
+        "requirement": null,
+        "reward": "10*s",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 24,
+        "daynight": "n",
+        "color": "B",
+        "production": "b",
+        "requirement": "r",
+        "reward": "2*n",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 25,
+        "daynight": "n",
+        "color": "Y",
+        "production": null,
+        "requirement": null,
+        "reward": "2*(Y+G)",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 26,
+        "daynight": "n",
+        "color": "R",
+        "production": "r",
+        "requirement": null,
+        "reward": "3*g",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 27,
+        "daynight": "n",
+        "color": "Y",
+        "production": null,
+        "requirement": null,
+        "reward": "1*(Y+B)",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 28,
+        "daynight": "n",
+        "color": "R",
+        "production": "b",
+        "requirement": null,
+        "reward": "3*r",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 29,
+        "daynight": "n",
+        "color": "Y",
+        "production": "g",
+        "requirement": null,
+        "reward": "2*g",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 30,
+        "daynight": "n",
+        "color": "R",
+        "production": "b",
+        "requirement": null,
+        "reward": "2*b",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 31,
+        "daynight": "n",
+        "color": "Y",
+        "production": null,
+        "requirement": null,
+        "reward": "1*(Y+R)",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 32,
+        "daynight": "n",
+        "color": "R",
+        "production": "br",
+        "requirement": "bbb",
+        "reward": 7,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 33,
+        "daynight": "n",
+        "color": "Y",
+        "production": null,
+        "requirement": null,
+        "reward": "3*g",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 34,
+        "daynight": "n",
+        "color": "G",
+        "production": "r",
+        "requirement": "bb",
+        "reward": "3*r",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 35,
+        "daynight": "n",
+        "color": "Y",
+        "production": "r",
+        "requirement": null,
+        "reward": "1*s",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 36,
+        "daynight": "n",
+        "color": "R",
+        "production": null,
+        "requirement": "rr",
+        "reward": "4*g",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 37,
+        "daynight": "n",
+        "color": "Y",
+        "production": null,
+        "requirement": "g",
+        "reward": "3*n",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 38,
+        "daynight": "n",
+        "color": "G",
+        "production": "b",
+        "requirement": "rg",
+        "reward": "3*c",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 39,
+        "daynight": "n",
+        "color": "R",
+        "production": "bg",
+        "requirement": "rr",
+        "reward": 9,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 40,
+        "daynight": "n",
+        "color": "B",
+        "production": null,
+        "requirement": "brg",
+        "reward": "3*n",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 41,
+        "daynight": "d",
+        "color": "G",
+        "production": "g",
+        "requirement": "bbr",
+        "reward": "4*n",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 42,
+        "daynight": "d",
+        "color": "Y",
+        "production": null,
+        "requirement": "br",
+        "reward": "2*(Y+G)",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 43,
+        "daynight": "d",
+        "color": "B",
+        "production": "b",
+        "requirement": null,
+        "reward": "10*s",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 44,
+        "daynight": "d",
+        "color": "Y",
+        "production": null,
+        "requirement": "bg",
+        "reward": "2*(Y+B)",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 45,
+        "daynight": "d",
+        "color": "G",
+        "production": "b",
+        "requirement": "rrr",
+        "reward": 13,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 46,
+        "daynight": "d",
+        "color": "B",
+        "production": "c",
+        "requirement": "bbr",
+        "reward": 10,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 47,
+        "daynight": "d",
+        "color": "Y",
+        "production": null,
+        "requirement": "rg",
+        "reward": "2*(Y+R)",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 48,
+        "daynight": "d",
+        "color": "R",
+        "production": "r",
+        "requirement": null,
+        "reward": "3*b",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 49,
+        "daynight": "d",
+        "color": "B",
+        "production": "c",
+        "requirement": "bbg",
+        "reward": 12,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 50,
+        "daynight": "d",
+        "color": "Y",
+        "production": "b",
+        "requirement": "gg",
+        "reward": "4*G",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 51,
+        "daynight": "d",
+        "color": "B",
+        "production": "b",
+        "requirement": "bbbb",
+        "reward": 14,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 52,
+        "daynight": "d",
+        "color": "R",
+        "production": null,
+        "requirement": "bbb",
+        "reward": "4*r",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 53,
+        "daynight": "d",
+        "color": "Y",
+        "production": "r",
+        "requirement": "gg",
+        "reward": "4*R",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 54,
+        "daynight": "d",
+        "color": "G",
+        "production": "r",
+        "requirement": "gg",
+        "reward": "4*c",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 55,
+        "daynight": "d",
+        "color": "B",
+        "production": "bc",
+        "requirement": "rgg",
+        "reward": "3*b",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 56,
+        "daynight": "d",
+        "color": "Y",
+        "production": "g",
+        "requirement": "brr",
+        "reward": "4*B",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 57,
+        "daynight": "d",
+        "color": "R",
+        "production": null,
+        "requirement": "ggg",
+        "reward": "4*b",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 58,
+        "daynight": "d",
+        "color": "G",
+        "production": "c",
+        "requirement": "rrr",
+        "reward": "3*c",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 59,
+        "daynight": "d",
+        "color": "Y",
+        "production": "c",
+        "requirement": "brrr",
+        "reward": "3*(Y+R)",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 60,
+        "daynight": "d",
+        "color": "B",
+        "production": "c",
+        "requirement": "bbrr",
+        "reward": 16,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 61,
+        "daynight": "d",
+        "color": "G",
+        "production": "g",
+        "requirement": "rrrr",
+        "reward": 17,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 62,
+        "daynight": "d",
+        "color": "Y",
+        "production": "c",
+        "requirement": "ggg",
+        "reward": "3*(Y+B)",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 63,
+        "daynight": "d",
+        "color": "G",
+        "production": "c",
+        "requirement": "rrg",
+        "reward": 15,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 64,
+        "daynight": "d",
+        "color": "B",
+        "production": "c",
+        "requirement": "bbgg",
+        "reward": 18,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 65,
+        "daynight": "d",
+        "color": "Y",
+        "production": "c",
+        "requirement": "ggg",
+        "reward": "3*(Y+G)",
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 66,
+        "daynight": "d",
+        "color": "B",
+        "production": null,
+        "requirement": "bbbb",
+        "reward": 20,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 67,
+        "daynight": "d",
+        "color": "G",
+        "production": "c",
+        "requirement": "rrgg",
+        "reward": 19,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 68,
+        "daynight": "d",
+        "color": "B",
+        "production": null,
+        "requirement": "bbbbb",
+        "reward": 24,
+        "imgsrc": null,
+        "from_below": false
+    },
+    {
+        "id": 69,
+        "daynight": "d",
+        "color": "R",
+        "production": "c",
+        "requirement": null,
+        "reward": "7*i",
+        "imgsrc": null,
+        "from_below": true
+    },
+    {
+        "id": 70,
+        "daynight": "d",
+        "color": "N",
+        "production": "c",
+        "requirement": null,
+        "reward": 6,
+        "imgsrc": null,
+        "from_below": true
+    },
+    {
+        "id": 71,
+        "daynight": "n",
+        "color": "G",
+        "production": "b",
+        "requirement": null,
+        "reward": "7*i",
+        "imgsrc": null,
+        "from_below": true
+    },
+    {
+        "id": 72,
+        "daynight": "n",
+        "color": "N",
+        "production": null,
+        "requirement": "rrrrr",
+        "reward": 26,
+        "imgsrc": null,
+        "from_below": true
+    },
+    {
+        "id": 73,
+        "daynight": "n",
+        "color": "Y",
+        "production": "r",
+        "requirement": "gggg",
+        "reward": "5*N",
+        "imgsrc": null,
+        "from_below": true
+    },
+    {
+        "id": 74,
+        "daynight": "n",
+        "color": "N",
+        "production": "g",
+        "requirement": null,
+        "reward": "7*i",
+        "imgsrc": null,
+        "from_below": true
+    },
+    {
+        "id": 75,
+        "daynight": "n",
+        "color": "B",
+        "production": "c",
+        "requirement": "bbbbbb",
+        "reward": 28,
+        "imgsrc": null,
+        "from_below": true
+    },
+    {
+        "id": 76,
+        "daynight": "n",
+        "color": "N",
+        "production": null,
+        "requirement": "bbrrgg",
+        "reward": "4*N",
+        "imgsrc": null,
+        "from_below": true
     }
-  ]
+]

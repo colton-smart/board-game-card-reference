@@ -21,10 +21,10 @@ export default function TerraformingMarsPage() {
     }
 
     // This would come from your database eventually
-    const cards = [
-        { id: '1', imageUrl: '/path-to-card.jpg', name: 'Example Card' },
-        // Add more cards
-    ]
+    // const cards = [
+    //     { id: '1', imageUrl: '/path-to-card.jpg', name: 'Example Card' },
+    //     // Add more cards
+    // ]
 
     return (
         <GameLayout>

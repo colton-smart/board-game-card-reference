@@ -22,14 +22,14 @@ export default function ArkNovaPage() {
     }
 
     // Placeholder cards data - replace with actual data later
-    const cards = [
-        { 
-            id: '1', 
-            imageUrl: '/path-to-ark-nova-card.jpg', 
-            name: 'Example Animal Card' 
-        },
-        // Add more cards
-    ]
+    // const cards = [
+    //     { 
+    //         id: '1', 
+    //         imageUrl: '/path-to-ark-nova-card.jpg', 
+    //         name: 'Example Animal Card' 
+    //     },
+    //     // Add more cards
+    // ]
 
     return (
         <GameLayout>

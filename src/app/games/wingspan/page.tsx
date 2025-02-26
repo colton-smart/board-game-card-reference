@@ -22,14 +22,14 @@ export default function WingspanPage() {
     }
 
     // Placeholder cards data - replace with actual data later
-    const cards = [
-        { 
-            id: '1', 
-            imageUrl: '/path-to-wingspan-card.jpg', 
-            name: 'Example Bird Card' 
-        },
-        // Add more cards
-    ]
+    // const cards = [
+    //     { 
+    //         id: '1', 
+    //         imageUrl: '/path-to-wingspan-card.jpg', 
+    //         name: 'Example Bird Card' 
+    //     },
+    //     // Add more cards
+    // ]
 
     return (
         <GameLayout>
