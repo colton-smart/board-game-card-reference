@@ -13,7 +13,7 @@ interface FilterBarProps {
 
 export default function FilterBar({ title, filters, filterOptions, onFilterChange }: FilterBarProps) {
     return (
-        <div className="sticky top-0 bg-white shadow-md z-10">
+        <div className="sticky top-0 shadow-md z-10">
             <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between h-16">
                     <h1 className="text-2xl font-bold">{title}</h1>
