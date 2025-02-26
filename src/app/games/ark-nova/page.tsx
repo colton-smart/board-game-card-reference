@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import GameLayout from '@/components/GameLayout'
 import FilterBar from '@/components/FilterBar'
-import CardGrid from '@/components/CardGrid'
+// import CardGrid from '@/components/CardGrid'
 
 const filterOptions = [
     { id: 'animals', label: 'Animals', icon: '🦁' },
@@ -39,7 +39,7 @@ export default function ArkNovaPage() {
                 filterOptions={filterOptions}
                 onFilterChange={handleFilterChange}
             />
-            <CardGrid cards={cards} />
+            {/* <CardGrid cards={cards} /> */}
         </GameLayout>
     )
 }

@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import GameLayout from '@/components/GameLayout'
 import FilterBar from '@/components/FilterBar'
 import CardGrid from '@/components/CardGrid'
@@ -16,20 +16,21 @@ export default function FarawayPage() {
     const [filters, setFilters] = useState(
         Object.fromEntries(filterOptions.map(opt => [opt.id, false]))
     )
+    const [cards, setCards] = useState([]) // Initialize cards state
 
     const handleFilterChange = (filterId: string) => {
         setFilters(prev => ({ ...prev, [filterId]: !prev[filterId] }))
     }
 
-    // Placeholder cards data - replace with actual data later
-    const cards = [
-        { 
-            id: '1', 
-            imageUrl: '/path-to-faraway-card.jpg', 
-            name: 'Example Location Card' 
-        },
-        // Add more cards
-    ]
+    useEffect(() => {
+        const fetchCardData = async () => {
+            const response = await fetch('/board-game-card-reference/card-data/faraway-card-data.json');
+            const data = await response.json();
+            console.log(data); // Check if data is fetched correctly
+            setCards(data);
+        };
+        fetchCardData();
+    }, []);
 
     return (
         <GameLayout>
@@ -39,7 +40,7 @@ export default function FarawayPage() {
                 filterOptions={filterOptions}
                 onFilterChange={handleFilterChange}
             />
-            <CardGrid cards={cards} />
+            <CardGrid cards={cards} /> {/* Pass the cards to CardGrid */}
         </GameLayout>
     )
 }

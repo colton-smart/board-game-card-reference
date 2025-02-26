@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import GameLayout from '@/components/GameLayout'
 import FilterBar from '@/components/FilterBar'
-import CardGrid from '@/components/CardGrid'
+// import CardGrid from '@/components/CardGrid'
 
 const filterOptions = [
     { id: 'corporation', label: 'Corporations', icon: '🏢' },
@@ -34,7 +34,7 @@ export default function TerraformingMarsPage() {
                 filterOptions={filterOptions}
                 onFilterChange={handleFilterChange}
             />
-            <CardGrid cards={cards} />
+            {/* <CardGrid cards={cards} /> */}
         </GameLayout>
     )
 }

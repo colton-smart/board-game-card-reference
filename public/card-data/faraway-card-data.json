@@ -12,7 +12,7 @@
       "id": 1,
       "daynight": "d",
       "color": "R",
-      "production": "rb",
+      "production": "br",
       "requirement": null,
       "reward": null,
       "imgsrc": null
@@ -57,7 +57,7 @@
       "id": 6,
       "daynight": "d",
       "color": "B",
-      "production": "bc",
+      "production": "cb",
       "requirement": null,
       "reward": null,
       "imgsrc": null
@@ -75,7 +75,7 @@
       "id": 8,
       "daynight": "d",
       "color": "G",
-      "production": "rc",
+      "production": "cr",
       "requirement": null,
       "reward": null,
       "imgsrc": null
@@ -111,7 +111,7 @@
       "id": 12,
       "daynight": "d",
       "color": "Y",
-      "production": "gc",
+      "production": "cg",
       "requirement": null,
       "reward": null,
       "imgsrc": null
