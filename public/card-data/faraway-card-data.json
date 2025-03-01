@@ -4,769 +4,769 @@
         "daynight": "d",
         "color": "N",
         "production": "brg",
-        "requirement": null,
+        "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "from_below": true
+        "set": "pfb"
     },
     {
         "id": 1,
         "daynight": "d",
         "color": "R",
         "production": "br",
-        "requirement": null,
+        "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 2,
         "daynight": "d",
         "color": "B",
         "production": "bb",
-        "requirement": null,
+        "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 3,
         "daynight": "d",
         "color": "G",
         "production": null,
-        "requirement": null,
-        "reward": 4,
+        "prerequisite": null,
+        "reward": "4",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 4,
         "daynight": "d",
         "color": "R",
         "production": "bg",
-        "requirement": null,
+        "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 5,
         "daynight": "d",
         "color": "G",
         "production": "r",
-        "requirement": null,
-        "reward": 2,
+        "prerequisite": null,
+        "reward": "2",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 6,
         "daynight": "d",
         "color": "B",
         "production": "cb",
-        "requirement": null,
+        "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 7,
         "daynight": "d",
         "color": "R",
         "production": "rg",
-        "requirement": null,
+        "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 8,
         "daynight": "d",
         "color": "G",
         "production": "cr",
-        "requirement": null,
+        "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 9,
         "daynight": "d",
         "color": "B",
         "production": null,
-        "requirement": null,
-        "reward": 5,
+        "prerequisite": null,
+        "reward": "5",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 10,
         "daynight": "d",
         "color": "R",
         "production": null,
-        "requirement": null,
+        "prerequisite": null,
         "reward": "2*n",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 11,
         "daynight": "d",
         "color": "G",
         "production": null,
-        "requirement": null,
+        "prerequisite": null,
         "reward": "2*c",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 12,
         "daynight": "d",
         "color": "Y",
         "production": "cg",
-        "requirement": null,
+        "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 13,
         "daynight": "d",
         "color": "B",
         "production": null,
-        "requirement": null,
+        "prerequisite": null,
         "reward": "2*b",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 14,
         "daynight": "d",
         "color": "R",
         "production": "g",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "2*n",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 15,
         "daynight": "d",
         "color": "G",
         "production": "c",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "2*r",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 16,
         "daynight": "d",
         "color": "R",
         "production": "r",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "2*r",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 17,
         "daynight": "d",
         "color": "B",
         "production": "b",
-        "requirement": "rr",
+        "prerequisite": "rr",
         "reward": "3*b",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 18,
         "daynight": "d",
         "color": "G",
         "production": "r",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "10*s",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 19,
         "daynight": "d",
         "color": "R",
         "production": "g",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "2*g",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 20,
         "daynight": "n",
         "color": "G",
         "production": "c",
-        "requirement": "b",
+        "prerequisite": "b",
         "reward": "2*n",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 21,
         "daynight": "n",
         "color": "B",
         "production": null,
-        "requirement": "bb",
-        "reward": 8,
+        "prerequisite": "bb",
+        "reward": "8",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 22,
         "daynight": "n",
         "color": "G",
         "production": "c",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "1*c",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 23,
         "daynight": "n",
         "color": "R",
         "production": "br",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "10*s",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 24,
         "daynight": "n",
         "color": "B",
         "production": "b",
-        "requirement": "r",
+        "prerequisite": "r",
         "reward": "2*n",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 25,
         "daynight": "n",
         "color": "Y",
         "production": null,
-        "requirement": null,
+        "prerequisite": null,
         "reward": "2*(Y+G)",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 26,
         "daynight": "n",
         "color": "R",
         "production": "r",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "3*g",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 27,
         "daynight": "n",
         "color": "Y",
         "production": null,
-        "requirement": null,
+        "prerequisite": null,
         "reward": "1*(Y+B)",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 28,
         "daynight": "n",
         "color": "R",
         "production": "b",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "3*r",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 29,
         "daynight": "n",
         "color": "Y",
         "production": "g",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "2*g",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 30,
         "daynight": "n",
         "color": "R",
         "production": "b",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "2*b",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 31,
         "daynight": "n",
         "color": "Y",
         "production": null,
-        "requirement": null,
+        "prerequisite": null,
         "reward": "1*(Y+R)",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 32,
         "daynight": "n",
         "color": "R",
         "production": "br",
-        "requirement": "bbb",
-        "reward": 7,
+        "prerequisite": "bbb",
+        "reward": "7",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 33,
         "daynight": "n",
         "color": "Y",
         "production": null,
-        "requirement": null,
+        "prerequisite": null,
         "reward": "3*g",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 34,
         "daynight": "n",
         "color": "G",
         "production": "r",
-        "requirement": "bb",
+        "prerequisite": "bb",
         "reward": "3*r",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 35,
         "daynight": "n",
         "color": "Y",
         "production": "r",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "1*s",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 36,
         "daynight": "n",
         "color": "R",
         "production": null,
-        "requirement": "rr",
+        "prerequisite": "rr",
         "reward": "4*g",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 37,
         "daynight": "n",
         "color": "Y",
         "production": null,
-        "requirement": "g",
+        "prerequisite": "g",
         "reward": "3*n",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 38,
         "daynight": "n",
         "color": "G",
         "production": "b",
-        "requirement": "rg",
+        "prerequisite": "rg",
         "reward": "3*c",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 39,
         "daynight": "n",
         "color": "R",
         "production": "bg",
-        "requirement": "rr",
-        "reward": 9,
+        "prerequisite": "rr",
+        "reward": "9",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 40,
         "daynight": "n",
         "color": "B",
         "production": null,
-        "requirement": "brg",
+        "prerequisite": "brg",
         "reward": "3*n",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 41,
         "daynight": "d",
         "color": "G",
         "production": "g",
-        "requirement": "bbr",
+        "prerequisite": "bbr",
         "reward": "4*n",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 42,
         "daynight": "d",
         "color": "Y",
         "production": null,
-        "requirement": "br",
+        "prerequisite": "br",
         "reward": "2*(Y+G)",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 43,
         "daynight": "d",
         "color": "B",
         "production": "b",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "10*s",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 44,
         "daynight": "d",
         "color": "Y",
         "production": null,
-        "requirement": "bg",
+        "prerequisite": "bg",
         "reward": "2*(Y+B)",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 45,
         "daynight": "d",
         "color": "G",
         "production": "b",
-        "requirement": "rrr",
-        "reward": 13,
+        "prerequisite": "rrr",
+        "reward": "13",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 46,
         "daynight": "d",
         "color": "B",
         "production": "c",
-        "requirement": "bbr",
-        "reward": 10,
+        "prerequisite": "bbr",
+        "reward": "10",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 47,
         "daynight": "d",
         "color": "Y",
         "production": null,
-        "requirement": "rg",
+        "prerequisite": "rg",
         "reward": "2*(Y+R)",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 48,
         "daynight": "d",
         "color": "R",
         "production": "r",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "3*b",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 49,
         "daynight": "d",
         "color": "B",
         "production": "c",
-        "requirement": "bbg",
-        "reward": 12,
+        "prerequisite": "bbg",
+        "reward": "12",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 50,
         "daynight": "d",
         "color": "Y",
         "production": "b",
-        "requirement": "gg",
+        "prerequisite": "gg",
         "reward": "4*G",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 51,
         "daynight": "d",
         "color": "B",
         "production": "b",
-        "requirement": "bbbb",
-        "reward": 14,
+        "prerequisite": "bbbb",
+        "reward": "14",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 52,
         "daynight": "d",
         "color": "R",
         "production": null,
-        "requirement": "bbb",
+        "prerequisite": "bbb",
         "reward": "4*r",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 53,
         "daynight": "d",
         "color": "Y",
         "production": "r",
-        "requirement": "gg",
+        "prerequisite": "gg",
         "reward": "4*R",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 54,
         "daynight": "d",
         "color": "G",
         "production": "r",
-        "requirement": "gg",
+        "prerequisite": "gg",
         "reward": "4*c",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 55,
         "daynight": "d",
         "color": "B",
         "production": "bc",
-        "requirement": "rgg",
+        "prerequisite": "rgg",
         "reward": "3*b",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 56,
         "daynight": "d",
         "color": "Y",
         "production": "g",
-        "requirement": "brr",
+        "prerequisite": "brr",
         "reward": "4*B",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 57,
         "daynight": "d",
         "color": "R",
         "production": null,
-        "requirement": "ggg",
+        "prerequisite": "ggg",
         "reward": "4*b",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 58,
         "daynight": "d",
         "color": "G",
         "production": "c",
-        "requirement": "rrr",
+        "prerequisite": "rrr",
         "reward": "3*c",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 59,
         "daynight": "d",
         "color": "Y",
         "production": "c",
-        "requirement": "brrr",
+        "prerequisite": "brrr",
         "reward": "3*(Y+R)",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 60,
         "daynight": "d",
         "color": "B",
         "production": "c",
-        "requirement": "bbrr",
+        "prerequisite": "bbrr",
         "reward": 16,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 61,
         "daynight": "d",
         "color": "G",
         "production": "g",
-        "requirement": "rrrr",
+        "prerequisite": "rrrr",
         "reward": 17,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 62,
         "daynight": "d",
         "color": "Y",
         "production": "c",
-        "requirement": "ggg",
+        "prerequisite": "ggg",
         "reward": "3*(Y+B)",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 63,
         "daynight": "d",
         "color": "G",
         "production": "c",
-        "requirement": "rrg",
+        "prerequisite": "rrg",
         "reward": 15,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 64,
         "daynight": "d",
         "color": "B",
         "production": "c",
-        "requirement": "bbgg",
+        "prerequisite": "bbgg",
         "reward": 18,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 65,
         "daynight": "d",
         "color": "Y",
         "production": "c",
-        "requirement": "ggg",
+        "prerequisite": "ggg",
         "reward": "3*(Y+G)",
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 66,
         "daynight": "d",
         "color": "B",
         "production": null,
-        "requirement": "bbbb",
+        "prerequisite": "bbbb",
         "reward": 20,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 67,
         "daynight": "d",
         "color": "G",
         "production": "c",
-        "requirement": "rrgg",
+        "prerequisite": "rrgg",
         "reward": 19,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 68,
         "daynight": "d",
         "color": "B",
         "production": null,
-        "requirement": "bbbbb",
+        "prerequisite": "bbbbb",
         "reward": 24,
         "imgsrc": null,
-        "from_below": false
+        "set": "base"
     },
     {
         "id": 69,
         "daynight": "d",
         "color": "R",
         "production": "c",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "7*i",
         "imgsrc": null,
-        "from_below": true
+        "set": "pfb"
     },
     {
         "id": 70,
         "daynight": "d",
         "color": "N",
         "production": "c",
-        "requirement": null,
+        "prerequisite": null,
         "reward": 6,
         "imgsrc": null,
-        "from_below": true
+        "set": "pfb"
     },
     {
         "id": 71,
         "daynight": "n",
         "color": "G",
         "production": "b",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "7*i",
         "imgsrc": null,
-        "from_below": true
+        "set": "pfb"
     },
     {
         "id": 72,
         "daynight": "n",
         "color": "N",
         "production": null,
-        "requirement": "rrrrr",
+        "prerequisite": "rrrrr",
         "reward": 26,
         "imgsrc": null,
-        "from_below": true
+        "set": "pfb"
     },
     {
         "id": 73,
         "daynight": "n",
         "color": "Y",
         "production": "r",
-        "requirement": "gggg",
+        "prerequisite": "gggg",
         "reward": "5*N",
         "imgsrc": null,
-        "from_below": true
+        "set": "pfb"
     },
     {
         "id": 74,
         "daynight": "n",
         "color": "N",
         "production": "g",
-        "requirement": null,
+        "prerequisite": null,
         "reward": "7*i",
         "imgsrc": null,
-        "from_below": true
+        "set": "pfb"
     },
     {
         "id": 75,
         "daynight": "n",
         "color": "B",
         "production": "c",
-        "requirement": "bbbbbb",
+        "prerequisite": "bbbbbb",
         "reward": 28,
         "imgsrc": null,
-        "from_below": true
+        "set": "pfb"
     },
     {
         "id": 76,
         "daynight": "n",
         "color": "N",
         "production": null,
-        "requirement": "bbrrgg",
+        "prerequisite": "bbrrgg",
         "reward": "4*N",
         "imgsrc": null,
-        "from_below": true
+        "set": "pfb"
     }
 ]
