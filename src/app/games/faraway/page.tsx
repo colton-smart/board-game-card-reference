@@ -20,7 +20,7 @@ interface FilterButtonProps {
     children: React.ReactNode;
 }
 
-const FilterButton = ({ value, selected, onClick, children }: FilterButtonProps) => (
+const FilterButton = ({ selected, onClick, children }: FilterButtonProps) => (
     <button 
         className={`mr-4 p-2 border rounded ${selected ? 'bg-blue-500' : 'bg-gray-200'}`} 
         onClick={onClick}
