@@ -605,7 +605,7 @@
         "color": "B",
         "production": "c",
         "prerequisite": "bbrr",
-        "reward": 16,
+        "reward": "16",
         "imgsrc": null,
         "set": "base"
     },
@@ -615,7 +615,7 @@
         "color": "G",
         "production": "g",
         "prerequisite": "rrrr",
-        "reward": 17,
+        "reward": "17",
         "imgsrc": null,
         "set": "base"
     },
@@ -635,7 +635,7 @@
         "color": "G",
         "production": "c",
         "prerequisite": "rrg",
-        "reward": 15,
+        "reward": "15",
         "imgsrc": null,
         "set": "base"
     },
@@ -645,7 +645,7 @@
         "color": "B",
         "production": "c",
         "prerequisite": "bbgg",
-        "reward": 18,
+        "reward": "18",
         "imgsrc": null,
         "set": "base"
     },
@@ -665,7 +665,7 @@
         "color": "B",
         "production": null,
         "prerequisite": "bbbb",
-        "reward": 20,
+        "reward": "20",
         "imgsrc": null,
         "set": "base"
     },
@@ -675,7 +675,7 @@
         "color": "G",
         "production": "c",
         "prerequisite": "rrgg",
-        "reward": 19,
+        "reward": "19",
         "imgsrc": null,
         "set": "base"
     },
@@ -685,7 +685,7 @@
         "color": "B",
         "production": null,
         "prerequisite": "bbbbb",
-        "reward": 24,
+        "reward": "24",
         "imgsrc": null,
         "set": "base"
     },
@@ -705,7 +705,7 @@
         "color": "N",
         "production": "c",
         "prerequisite": null,
-        "reward": 6,
+        "reward": "6",
         "imgsrc": null,
         "set": "pfb"
     },
@@ -725,7 +725,7 @@
         "color": "N",
         "production": null,
         "prerequisite": "rrrrr",
-        "reward": 26,
+        "reward": "26",
         "imgsrc": null,
         "set": "pfb"
     },
@@ -755,7 +755,7 @@
         "color": "B",
         "production": "c",
         "prerequisite": "bbbbbb",
-        "reward": 28,
+        "reward": "28",
         "imgsrc": null,
         "set": "pfb"
     },

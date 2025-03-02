@@ -13,14 +13,30 @@ interface Card {
     set: string;
 }
 
+interface FilterButtonProps {
+    value: string;
+    selected: boolean;
+    onClick: () => void;
+    children: React.ReactNode;
+}
+
+const FilterButton = ({ value, selected, onClick, children }: FilterButtonProps) => (
+    <button 
+        className={`mr-4 p-2 border rounded ${selected ? 'bg-blue-500' : 'bg-gray-200'}`} 
+        onClick={onClick}
+    >
+        {children}
+    </button>
+);
+
 export default function FarawayPage() {
-    const [cards, setCards] = useState<Card[]>([]) // Initialize cards state
-    const [selectedColors, setSelectedColors] = useState<string[]>([]); // New state for selected colors
-    const [idRange, setIdRange] = useState<[number, number]>([0, 76]); // New state for ID range
-    const [selectedDayNight, setSelectedDayNight] = useState<string[]>([]); // New state for selected day/night
-    const [selectedPrerequisites, setSelectedPrerequisites] = useState<string[]>([]); // New state for selected prerequisites
-    const [selectedProduction, setSelectedProduction] = useState<string[]>([]); // New state for selected production types
-    const [selectedSets, setSelectedSets] = useState<string[]>([]); // New state for selected sets
+    const [cards, setCards] = useState<Card[]>([])
+    const [selectedColors, setSelectedColors] = useState<string[]>([]);
+    const [idRange, setIdRange] = useState<[number, number]>([0, 76]);
+    const [selectedDayNight, setSelectedDayNight] = useState<string[]>([]);
+    const [selectedPrerequisites, setSelectedPrerequisites] = useState<string[]>([]);
+    const [selectedProduction, setSelectedProduction] = useState<string[]>([]);
+    const [selectedSets, setSelectedSets] = useState<string[]>([]);
 
     const handleColorChange = (color: string) => {
         setSelectedColors(prev => 
@@ -78,14 +94,14 @@ export default function FarawayPage() {
     const getImagesFromValues = (values: (string | null)[]) => {
         const images: JSX.Element[] = [];
         for (const value of values) {
-            if (!value) continue; // Skip null values
+            if (!value) continue;
             for (const char of value) {
                 switch (char) {
                     case 'b':
                         images.push(
                             <Image
                                 key={`b-${images.length}`}
-                                src="/board-game-card-reference/images/uddu_stone_t.png"
+                                src="/board-game-card-reference/images/faraway_assets/uddu_stone.png"
                                 width={30}
                                 height={30}
                                 alt="Uddu Stone"
@@ -97,7 +113,7 @@ export default function FarawayPage() {
                         images.push(
                             <Image
                                 key={`g-${images.length}`}
-                                src="/board-game-card-reference/images/goldlog_thistle_t.png"
+                                src="/board-game-card-reference/images/faraway_assets/goldlog_thistle.png"
                                 width={30}
                                 height={30}
                                 alt="Goldlog Thistle"
@@ -109,7 +125,7 @@ export default function FarawayPage() {
                         images.push(
                             <Image
                                 key={`r-${images.length}`}
-                                src="/board-game-card-reference/images/okiko_chimera_t.png"
+                                src="/board-game-card-reference/images/faraway_assets/okiko_chimera.png"
                                 width={30}
                                 height={30}
                                 alt="Okiko Chimera"
@@ -121,7 +137,7 @@ export default function FarawayPage() {
                         images.push(
                             <Image
                                 key={`c-${images.length}`}
-                                src="/board-game-card-reference/images/clue_t.png"
+                                src="/board-game-card-reference/images/faraway_assets/clue.png"
                                 width={30}
                                 height={30}
                                 alt="Clue"
@@ -129,7 +145,116 @@ export default function FarawayPage() {
                             />
                         );
                         break;
+                    case 'B':
+                        images.push(
+                            <Image
+                                key={`B-${images.length}`}
+                                src="/board-game-card-reference/images/faraway_assets/b_card.png"
+                                width={30}
+                                height={30}
+                                alt="Blue Card"
+                                className="object-contain"
+                            />
+                        );
+                        break;
+                    case 's':
+                        images.push(
+                            <Image
+                                key={`s-${images.length}`}
+                                src="/board-game-card-reference/images/faraway_assets/card_set.png"
+                                width={30}
+                                height={30}
+                                alt="Four Color Card Set"
+                                className="object-contain"
+                            />
+                        );
+                        break;
+                    case 'd':
+                        images.push(
+                            <Image
+                                key={`d-${images.length}`}
+                                src="/board-game-card-reference/images/faraway_assets/day.png"
+                                width={30}
+                                height={30}
+                                alt="Day"
+                                className="object-contain"
+                            />
+                        );
+                        break;
+                    case 'G':
+                        images.push(
+                            <Image
+                                key={`G-${images.length}`}
+                                src="/board-game-card-reference/images/faraway_assets/g_card.png"
+                                width={30}
+                                height={30}
+                                alt="Green Card"
+                                className="object-contain"
+                            />
+                        );
+                        break;
+                    case 'i':
+                        images.push(
+                            <Image
+                                key={`i-${images.length}`}
+                                src="/board-game-card-reference/images/faraway_assets/icon_set.png"
+                                width={40}
+                                height={30}
+                                alt="Resource Set"
+                                className="object-contain"
+                            />
+                        );
+                        break;
+                    case 'N':
+                        images.push(
+                            <Image
+                                key={`N-${images.length}`}
+                                src="/board-game-card-reference/images/faraway_assets/n_card.png"
+                                width={30}
+                                height={30}
+                                alt="Gray Card"
+                                className="object-contain"
+                            />
+                        );
+                        break;
+                    case 'n':
+                        images.push(
+                            <Image
+                                key={`n-${images.length}`}
+                                src="/board-game-card-reference/images/faraway_assets/night.png"
+                                width={30}
+                                height={30}
+                                alt="Night"
+                                className="object-contain"
+                            />
+                        );
+                        break;
+                    case 'R':
+                        images.push(
+                            <Image
+                                key={`R-${images.length}`}
+                                src="/board-game-card-reference/images/faraway_assets/r_card.png"
+                                width={30}
+                                height={30}
+                                alt="Red Card"
+                                className="object-contain"
+                            />
+                        );
+                        break;
+                    case 'Y':
+                        images.push(
+                            <Image
+                                key={`Y-${images.length}`}
+                                src="/board-game-card-reference/images/faraway_assets/y_card.png"
+                                width={30}
+                                height={30}
+                                alt="Yellow Card"
+                                className="object-contain"
+                            />
+                        );
+                        break;
                     default:
+                        images.push(<span key={`text-${images.length}`}>{char}</span>);
                         break;
                 }
             }
@@ -143,7 +268,7 @@ export default function FarawayPage() {
         (selectedDayNight.length === 0 || selectedDayNight.includes(card.daynight)) &&
         (selectedPrerequisites.length === 0 || selectedPrerequisites.every(p => card.prerequisite?.includes(p))) &&
         (selectedProduction.length === 0 || selectedProduction.every(p => card.production?.includes(p))) &&
-        (selectedSets.length === 0 || selectedSets.includes(card.set)) && // New filter for sets
+        (selectedSets.length === 0 || selectedSets.includes(card.set)) &&
         card.id >= idRange[0] && card.id <= idRange[1]
     );
 
@@ -156,115 +281,80 @@ export default function FarawayPage() {
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Card Color:</h2>
                             {['B', 'R', 'G', 'Y', 'N'].map(color => (
-                                <button 
+                                <FilterButton 
                                     key={color} 
-                                    className={`mr-4 p-2 border rounded ${selectedColors.includes(color) ? 'bg-blue-500 border-blue-700 shadow-lg' : 'bg-gray-200'}`} 
-                                    onClick={() => handleColorChange(color)} 
-                                    style={{ backgroundColor: getBackgroundColor(color) }}
+                                    value={color} 
+                                    selected={selectedColors.includes(color)} 
+                                    onClick={() => handleColorChange(color)}
                                 >
-                                    {color === 'B' ? 'Blue' : color === 'R' ? 'Red' : color === 'G' ? 'Green' : color === 'Y' ? 'Yellow' : 'Gray'}
-                                </button>
+                                    <Image
+                                        src={`/board-game-card-reference/images/faraway_assets/${color.toLowerCase()}_card.png`}
+                                        width={40}
+                                        height={40}
+                                        alt={`${color} Card`}
+                                        className="object-contain"
+                                    />
+                                </FilterButton>
                             ))}
                         </div>
                         {/* New Day/Night Filter */}
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Day / Night:</h2>
                             {['d', 'n'].map(dayNight => (
-                                <label key={dayNight} className="mr-4">
-                                    <input 
-                                        type="checkbox" 
-                                        value={dayNight} 
-                                        checked={selectedDayNight.includes(dayNight)} 
-                                        onChange={() => handleDayNightChange(dayNight)} 
-                                    /> 
-                                    {dayNight === 'd' ? 'Day' : 'Night'}
-                                </label>
+                                <FilterButton 
+                                    key={dayNight} 
+                                    value={dayNight} 
+                                    selected={selectedDayNight.includes(dayNight)} 
+                                    onClick={() => handleDayNightChange(dayNight)}
+                                >
+                                    <Image 
+                                        src={`/board-game-card-reference/images/faraway_assets/${dayNight === 'd' ? 'day' : 'night'}.png`} 
+                                        width={40}
+                                        height={40}
+                                        alt={dayNight === 'd' ? 'Day' : 'Night'}
+                                        className="object-contain"
+                                    />
+                                </FilterButton>
                             ))}
                         </div>
                         {/* New Prerequisite Filter with Buttons */}
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Prerequisite:</h2>
                             {['b', 'r', 'g'].map(prerequisite => (
-                                <button 
+                                <FilterButton 
                                     key={prerequisite} 
-                                    className={`mr-4 p-2 border rounded ${selectedPrerequisites.includes(prerequisite) ? 'bg-blue-500' : 'bg-gray-200'}`} 
+                                    value={prerequisite} 
+                                    selected={selectedPrerequisites.includes(prerequisite)} 
                                     onClick={() => handlePrerequisiteChange(prerequisite)}
                                 >
-                                    {prerequisite === 'b' ? (
-                                        <Image
-                                            src="/board-game-card-reference/images/uddu_stone_t.png"
-                                            width={40} // Adjust size as needed
-                                            height={40} // Adjust size as needed
-                                            alt="Uddu Stone"
-                                            className="object-contain"
-                                        />
-                                    ) : prerequisite === 'r' ? (
-                                        <Image
-                                            src="/board-game-card-reference/images/okiko_chimera_t.png"
-                                            width={40} // Adjust size as needed
-                                            height={40} // Adjust size as needed
-                                            alt="Okiko Chimera"
-                                            className="object-contain"
-                                        />
-                                    ) : prerequisite === 'g' ? (
-                                        <Image
-                                            src="/board-game-card-reference/images/goldlog_thistle_t.png"
-                                            width={40} // Adjust size as needed
-                                            height={40} // Adjust size as needed
-                                            alt="Goldlog Thistle"
-                                            className="object-contain"
-                                        />
-                                    ) : (
-                                        prerequisite.toUpperCase() // Display 'B' or 'R'
-                                    )}
-                                </button>
+                                    <Image
+                                        src={`/board-game-card-reference/images/faraway_assets/${prerequisite === 'b' ? 'uddu_stone' : prerequisite === 'r' ? 'okiko_chimera' : 'goldlog_thistle'}.png`}
+                                        width={40}
+                                        height={40}
+                                        alt={prerequisite === 'b' ? 'Uddu Stone' : prerequisite === 'r' ? 'Okiko Chimera' : 'Goldlog Thistle'}
+                                        className="object-contain"
+                                    />
+                                </FilterButton>
                             ))}
                         </div>
                         {/* New Production Filter */}
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Production:</h2>
                             {['b', 'r', 'g', 'c'].map(production => (
-                                <button 
+                                <FilterButton 
                                     key={production} 
-                                    className={`mr-4 p-2 border rounded ${selectedProduction.includes(production) ? 'bg-blue-500' : 'bg-gray-200'}`} 
-                                    onClick={() => handleProductionChange(production)} 
+                                    value={production} 
+                                    selected={selectedProduction.includes(production)} 
+                                    onClick={() => handleProductionChange(production)}
                                 >
-                                    {production === 'b' ? (
-                                        <Image
-                                            src="/board-game-card-reference/images/uddu_stone_t.png"
-                                            width={40} // Adjust size as needed
-                                            height={40} // Adjust size as needed
-                                            alt="Uddu Stone"
-                                            className="object-contain"
-                                        />
-                                    ) : production === 'r' ? (
-                                        <Image
-                                            src="/board-game-card-reference/images/okiko_chimera_t.png"
-                                            width={40} // Adjust size as needed
-                                            height={40} // Adjust size as needed
-                                            alt="Okiko Chimera"
-                                            className="object-contain"
-                                        />
-                                    ) : production === 'g' ? (
-                                        <Image
-                                            src="/board-game-card-reference/images/goldlog_thistle_t.png"
-                                            width={40} // Adjust size as needed
-                                            height={40} // Adjust size as needed
-                                            alt="Goldlog Thistle"
-                                            className="object-contain"
-                                        />
-                                    ) : production === 'c' ? (
-                                        <Image
-                                            src="/board-game-card-reference/images/clue_t.png"
-                                            width={40} // Adjust size as needed
-                                            height={40} // Adjust size as needed
-                                            alt="Clue"
-                                            className="object-contain"
-                                        />
-                                    ) : (
-                                        production.toUpperCase() // Fallback for any other production types
-                                    )}
-                                </button>
+                                    <Image
+                                        src={`/board-game-card-reference/images/faraway_assets/${production === 'b' ? 'uddu_stone' : production === 'r' ? 'okiko_chimera' : production === 'g' ? 'goldlog_thistle' : 'clue'}.png`}
+                                        width={40}
+                                        height={40}
+                                        alt={production === 'b' ? 'Uddu Stone' : production === 'r' ? 'Okiko Chimera' : production === 'g' ? 'Goldlog Thistle' : 'Clue'}
+                                        className="object-contain"
+                                    />
+                                </FilterButton>
                             ))}
                         </div>
                         {/* New Set Filter */}
@@ -292,7 +382,7 @@ export default function FarawayPage() {
                         type="range"
                         min={0}
                         max={76}
-                        value={idRange[0]} // Use the lower bound of the range
+                        value={idRange[0]}
                         onChange={(e) => handleIdRangeChange(e, [Number(e.target.value), idRange[1]])}
                         className="w-full"
                     />
@@ -300,7 +390,7 @@ export default function FarawayPage() {
                         type="range"
                         min={0}
                         max={76}
-                        value={idRange[1]} // Use the upper bound of the range
+                        value={idRange[1]}
                         onChange={(e) => handleIdRangeChange(e, [idRange[0], Number(e.target.value)])}
                         className="w-full"
                     />
@@ -313,19 +403,25 @@ export default function FarawayPage() {
                         className="rounded-lg shadow-md overflow-hidden p-4"
                         style={{
                             backgroundColor: getBackgroundColor(card.color),
-                            width: '100%', // Use full width of the grid cell
-                            height: '250px', // Keep the height fixed to make it square
+                            width: '100%',
+                            height: '250px',
                         }}
                     >
                         <h3 className="text-lg font-semibold">ID: {card.id}</h3>
-                        <p>Day/Night: {card.daynight}</p>
-                        <p>Color: {card.color}</p>
+                        <div className="flex space-x-0">
+                            <p>Day/Night: </p>{getImagesFromValues([card.daynight])}
+                        </div>
+                        <div className="flex space-x-0">
+                            <p>Card Color: </p>{getImagesFromValues([card.color])}
+                        </div>
+                        <div className="flex space-x-0">
+                            <p>Production: </p>{getImagesFromValues([card.production])}
+                        </div>
                         <div className="flex space-x-0">
                             <p>Prerequisite: </p>{getImagesFromValues([card.prerequisite])}
                         </div>
-                        <p>Reward: {card.reward !== null ? card.reward : 'N/A'}</p>
                         <div className="flex space-x-0">
-                            <p>Production: </p>{getImagesFromValues([card.production])}
+                            <p>Reward: </p>{getImagesFromValues([card.reward])}
                         </div>
                         <p>Set: {card.set === 'base' ? 'Base' : 'People From Below'}</p>
                     </div>

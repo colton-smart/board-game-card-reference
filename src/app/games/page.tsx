@@ -2,28 +2,28 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const games = [
-  {
-    title: "Terraforming Mars",
-    description: "Compete with rival CEOs to transform Mars into a habitable planet",
-    imageUrl: "/board-game-card-reference/images/terraforming-mars.jpg",
-    slug: "terraforming-mars"
-  },
-  {
-    title: "Ark Nova",
-    description: "Build a modern, scientifically managed zoo to support conservation",
-    imageUrl: "/board-game-card-reference/images/ark-nova.jpg",
-    slug: "ark-nova"
-  },
-  {
-    title: "Wingspan",
-    description: "Attract a collection of beautiful birds to your wildlife preserves",
-    imageUrl: "/board-game-card-reference/images/wingspan.jpg",
-    slug: "wingspan"
-  },
+  // {
+  //   title: "Terraforming Mars",
+  //   description: "Compete with rival CEOs to transform Mars into a habitable planet",
+  //   imageUrl: "/board-game-card-reference/images/terraforming_mars_assets/terraforming-mars.jpg",
+  //   slug: "terraforming-mars"
+  // },
+  // {
+  //   title: "Ark Nova",
+  //   description: "Build a modern, scientifically managed zoo to support conservation",
+  //   imageUrl: "/board-game-card-reference/images/ark_nova_assets/ark_nova.jpg",
+  //   slug: "ark-nova"
+  // },
+  // {
+  //   title: "Wingspan",
+  //   description: "Attract a collection of beautiful birds to your wildlife preserves",
+  //   imageUrl: "/board-game-card-reference/images/wingspan_assets/wingspan.jpg",
+  //   slug: "wingspan"
+  // },
   {
     title: "Faraway",
     description: "Explore mysterious islands and uncover ancient secrets",
-    imageUrl: "/board-game-card-reference/images/faraway.jpg",
+    imageUrl: "/board-game-card-reference/images/faraway_assets/faraway.jpg",
     slug: "faraway"
   }
 ];
