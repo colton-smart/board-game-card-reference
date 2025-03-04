@@ -7,7 +7,8 @@
         "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "set": "pfb"
+        "set": "pfb",
+        "type": "region"
     },
     {
         "id": 1,
@@ -17,7 +18,8 @@
         "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 2,
@@ -27,7 +29,8 @@
         "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 3,
@@ -37,7 +40,8 @@
         "prerequisite": null,
         "reward": "4",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 4,
@@ -47,7 +51,8 @@
         "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 5,
@@ -57,7 +62,8 @@
         "prerequisite": null,
         "reward": "2",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 6,
@@ -67,7 +73,8 @@
         "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 7,
@@ -77,7 +84,8 @@
         "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 8,
@@ -87,7 +95,8 @@
         "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 9,
@@ -97,7 +106,8 @@
         "prerequisite": null,
         "reward": "5",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 10,
@@ -107,7 +117,8 @@
         "prerequisite": null,
         "reward": "2*n",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 11,
@@ -117,7 +128,8 @@
         "prerequisite": null,
         "reward": "2*c",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 12,
@@ -127,7 +139,8 @@
         "prerequisite": null,
         "reward": null,
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 13,
@@ -137,7 +150,8 @@
         "prerequisite": null,
         "reward": "2*b",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 14,
@@ -147,7 +161,8 @@
         "prerequisite": null,
         "reward": "2*n",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 15,
@@ -157,7 +172,8 @@
         "prerequisite": null,
         "reward": "2*r",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 16,
@@ -167,7 +183,8 @@
         "prerequisite": null,
         "reward": "2*r",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 17,
@@ -177,7 +194,8 @@
         "prerequisite": "rr",
         "reward": "3*b",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 18,
@@ -187,7 +205,8 @@
         "prerequisite": null,
         "reward": "10*s",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 19,
@@ -197,7 +216,8 @@
         "prerequisite": null,
         "reward": "2*g",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 20,
@@ -207,7 +227,8 @@
         "prerequisite": "b",
         "reward": "2*n",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 21,
@@ -217,7 +238,8 @@
         "prerequisite": "bb",
         "reward": "8",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 22,
@@ -227,7 +249,8 @@
         "prerequisite": null,
         "reward": "1*c",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 23,
@@ -237,7 +260,8 @@
         "prerequisite": null,
         "reward": "10*s",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 24,
@@ -247,7 +271,8 @@
         "prerequisite": "r",
         "reward": "2*n",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 25,
@@ -257,7 +282,8 @@
         "prerequisite": null,
         "reward": "2*(Y+G)",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 26,
@@ -267,7 +293,8 @@
         "prerequisite": null,
         "reward": "3*g",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 27,
@@ -277,7 +304,8 @@
         "prerequisite": null,
         "reward": "1*(Y+B)",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 28,
@@ -287,7 +315,8 @@
         "prerequisite": null,
         "reward": "3*r",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 29,
@@ -297,7 +326,8 @@
         "prerequisite": null,
         "reward": "2*g",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 30,
@@ -307,7 +337,8 @@
         "prerequisite": null,
         "reward": "2*b",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 31,
@@ -317,7 +348,8 @@
         "prerequisite": null,
         "reward": "1*(Y+R)",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 32,
@@ -327,7 +359,8 @@
         "prerequisite": "bbb",
         "reward": "7",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 33,
@@ -337,7 +370,8 @@
         "prerequisite": null,
         "reward": "3*g",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 34,
@@ -347,7 +381,8 @@
         "prerequisite": "bb",
         "reward": "3*r",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 35,
@@ -357,7 +392,8 @@
         "prerequisite": null,
         "reward": "1*s",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 36,
@@ -367,7 +403,8 @@
         "prerequisite": "rr",
         "reward": "4*g",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 37,
@@ -377,7 +414,8 @@
         "prerequisite": "g",
         "reward": "3*n",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 38,
@@ -387,7 +425,8 @@
         "prerequisite": "rg",
         "reward": "3*c",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 39,
@@ -397,7 +436,8 @@
         "prerequisite": "rr",
         "reward": "9",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 40,
@@ -407,7 +447,8 @@
         "prerequisite": "brg",
         "reward": "3*n",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 41,
@@ -417,7 +458,8 @@
         "prerequisite": "bbr",
         "reward": "4*n",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 42,
@@ -427,7 +469,8 @@
         "prerequisite": "br",
         "reward": "2*(Y+G)",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 43,
@@ -437,7 +480,8 @@
         "prerequisite": null,
         "reward": "10*s",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 44,
@@ -447,7 +491,8 @@
         "prerequisite": "bg",
         "reward": "2*(Y+B)",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 45,
@@ -457,7 +502,8 @@
         "prerequisite": "rrr",
         "reward": "13",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 46,
@@ -467,7 +513,8 @@
         "prerequisite": "bbr",
         "reward": "10",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 47,
@@ -477,7 +524,8 @@
         "prerequisite": "rg",
         "reward": "2*(Y+R)",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 48,
@@ -487,7 +535,8 @@
         "prerequisite": null,
         "reward": "3*b",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 49,
@@ -497,7 +546,8 @@
         "prerequisite": "bbg",
         "reward": "12",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 50,
@@ -507,7 +557,8 @@
         "prerequisite": "gg",
         "reward": "4*G",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 51,
@@ -517,7 +568,8 @@
         "prerequisite": "bbbb",
         "reward": "14",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 52,
@@ -527,7 +579,8 @@
         "prerequisite": "bbb",
         "reward": "4*r",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 53,
@@ -537,7 +590,8 @@
         "prerequisite": "gg",
         "reward": "4*R",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 54,
@@ -547,7 +601,8 @@
         "prerequisite": "gg",
         "reward": "4*c",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 55,
@@ -557,7 +612,8 @@
         "prerequisite": "rgg",
         "reward": "3*b",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 56,
@@ -567,7 +623,8 @@
         "prerequisite": "brr",
         "reward": "4*B",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 57,
@@ -577,7 +634,8 @@
         "prerequisite": "ggg",
         "reward": "4*b",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 58,
@@ -587,7 +645,8 @@
         "prerequisite": "rrr",
         "reward": "3*c",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 59,
@@ -597,7 +656,8 @@
         "prerequisite": "brrr",
         "reward": "3*(Y+R)",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 60,
@@ -607,7 +667,8 @@
         "prerequisite": "bbrr",
         "reward": "16",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 61,
@@ -617,7 +678,8 @@
         "prerequisite": "rrrr",
         "reward": "17",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 62,
@@ -627,7 +689,8 @@
         "prerequisite": "ggg",
         "reward": "3*(Y+B)",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 63,
@@ -637,7 +700,8 @@
         "prerequisite": "rrg",
         "reward": "15",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 64,
@@ -647,7 +711,8 @@
         "prerequisite": "bbgg",
         "reward": "18",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 65,
@@ -657,7 +722,8 @@
         "prerequisite": "ggg",
         "reward": "3*(Y+G)",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 66,
@@ -667,7 +733,8 @@
         "prerequisite": "bbbb",
         "reward": "20",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 67,
@@ -677,7 +744,8 @@
         "prerequisite": "rrgg",
         "reward": "19",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 68,
@@ -687,7 +755,8 @@
         "prerequisite": "bbbbb",
         "reward": "24",
         "imgsrc": null,
-        "set": "base"
+        "set": "base",
+        "type": "region"
     },
     {
         "id": 69,
@@ -697,7 +766,8 @@
         "prerequisite": null,
         "reward": "7*i",
         "imgsrc": null,
-        "set": "pfb"
+        "set": "pfb",
+        "type": "region"
     },
     {
         "id": 70,
@@ -707,7 +777,8 @@
         "prerequisite": null,
         "reward": "6",
         "imgsrc": null,
-        "set": "pfb"
+        "set": "pfb",
+        "type": "region"
     },
     {
         "id": 71,
@@ -717,7 +788,8 @@
         "prerequisite": null,
         "reward": "7*i",
         "imgsrc": null,
-        "set": "pfb"
+        "set": "pfb",
+        "type": "region"
     },
     {
         "id": 72,
@@ -727,7 +799,8 @@
         "prerequisite": "rrrrr",
         "reward": "26",
         "imgsrc": null,
-        "set": "pfb"
+        "set": "pfb",
+        "type": "region"
     },
     {
         "id": 73,
@@ -737,7 +810,8 @@
         "prerequisite": "gggg",
         "reward": "5*N",
         "imgsrc": null,
-        "set": "pfb"
+        "set": "pfb",
+        "type": "region"
     },
     {
         "id": 74,
@@ -747,7 +821,8 @@
         "prerequisite": null,
         "reward": "7*i",
         "imgsrc": null,
-        "set": "pfb"
+        "set": "pfb",
+        "type": "region"
     },
     {
         "id": 75,
@@ -757,7 +832,8 @@
         "prerequisite": "bbbbbb",
         "reward": "28",
         "imgsrc": null,
-        "set": "pfb"
+        "set": "pfb",
+        "type": "region"
     },
     {
         "id": 76,
@@ -767,6 +843,590 @@
         "prerequisite": "bbrrgg",
         "reward": "4*N",
         "imgsrc": null,
-        "set": "pfb"
-    }
-]
+        "set": "pfb",
+        "type": "region"
+    },
+    {
+      "id": 100,
+      "daynight": null,
+      "color": "N",
+      "production": "b",
+      "prerequisite": null,
+      "reward": "1*n",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 101,
+      "daynight": null,
+      "color": "N",
+      "production": null,
+      "prerequisite": null,
+      "reward": 5,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 102,
+      "daynight": null,
+      "color": "N",
+      "production": "c",
+      "prerequisite": null,
+      "reward": "1*c",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 103,
+      "daynight": null,
+      "color": "Y",
+      "production": null,
+      "prerequisite": null,
+      "reward": "1*c",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 104,
+      "daynight": null,
+      "color": "N",
+      "production": null,
+      "prerequisite": null,
+      "reward": "2*c",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 105,
+      "daynight": null,
+      "color": "N",
+      "production": "c",
+      "prerequisite": null,
+      "reward": "4*s",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 106,
+      "daynight": null,
+      "color": "Y",
+      "production": null,
+      "prerequisite": null,
+      "reward": "4*s",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 107,
+      "daynight": null,
+      "color": "G",
+      "production": null,
+      "prerequisite": null,
+      "reward": "1*n",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 108,
+      "daynight": null,
+      "color": "R",
+      "production": "n",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 109,
+      "daynight": null,
+      "color": "N",
+      "production": "b",
+      "prerequisite": null,
+      "reward": "1*b",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 110,
+      "daynight": null,
+      "color": "N",
+      "production": "r",
+      "prerequisite": null,
+      "reward": "1*r",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 111,
+      "daynight": null,
+      "color": "N",
+      "production": "g",
+      "prerequisite": null,
+      "reward": "1*g",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 112,
+      "daynight": null,
+      "color": "B",
+      "production": "b",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 113,
+      "daynight": null,
+      "color": "B",
+      "production": "r",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 114,
+      "daynight": null,
+      "color": "B",
+      "production": "g",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 115,
+      "daynight": null,
+      "color": "N",
+      "production": null,
+      "prerequisite": null,
+      "reward": "2*b",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 116,
+      "daynight": null,
+      "color": "N",
+      "production": null,
+      "prerequisite": null,
+      "reward": "2*g",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 117,
+      "daynight": null,
+      "color": "N",
+      "production": null,
+      "prerequisite": null,
+      "reward": "2*r",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 118,
+      "daynight": null,
+      "color": "N",
+      "production": "cb",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 119,
+      "daynight": null,
+      "color": "N",
+      "production": "cg",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 120,
+      "daynight": null,
+      "color": "N",
+      "production": "cr",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 121,
+      "daynight": null,
+      "color": "Y",
+      "production": null,
+      "prerequisite": null,
+      "reward": "1*Y",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 122,
+      "daynight": null,
+      "color": "B",
+      "production": null,
+      "prerequisite": null,
+      "reward": "1*B",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 123,
+      "daynight": null,
+      "color": "R",
+      "production": null,
+      "prerequisite": null,
+      "reward": "1*R",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 124,
+      "daynight": null,
+      "color": "G",
+      "production": null,
+      "prerequisite": null,
+      "reward": "1*G",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 125,
+      "daynight": null,
+      "color": "N",
+      "production": "nb",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 126,
+      "daynight": null,
+      "color": "N",
+      "production": "ng",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 127,
+      "daynight": null,
+      "color": "N",
+      "production": "nr",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 128,
+      "daynight": null,
+      "color": "R",
+      "production": "g",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 129,
+      "daynight": null,
+      "color": "R",
+      "production": "b",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 130,
+      "daynight": null,
+      "color": "R",
+      "production": "r",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 131,
+      "daynight": null,
+      "color": "N",
+      "production": null,
+      "prerequisite": null,
+      "reward": "1*(R+Y)",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 132,
+      "daynight": null,
+      "color": "N",
+      "production": null,
+      "prerequisite": null,
+      "reward": "1*(G+B)",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 133,
+      "daynight": null,
+      "color": "N",
+      "production": null,
+      "prerequisite": null,
+      "reward": "1*(G+R)",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 134,
+      "daynight": null,
+      "color": "N",
+      "production": null,
+      "prerequisite": null,
+      "reward": "1*(Y+G)",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 135,
+      "daynight": null,
+      "color": "N",
+      "production": null,
+      "prerequisite": null,
+      "reward": "1*(R+B)",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 136,
+      "daynight": null,
+      "color": "N",
+      "production": null,
+      "prerequisite": null,
+      "reward": "1*(B+Y)",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 137,
+      "daynight": null,
+      "color": "N",
+      "production": "b",
+      "prerequisite": null,
+      "reward": "1*c",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 138,
+      "daynight": null,
+      "color": "N",
+      "production": "r",
+      "prerequisite": null,
+      "reward": "1*c",
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 139,
+      "daynight": null,
+      "color": "G",
+      "production": "b",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 140,
+      "daynight": null,
+      "color": "G",
+      "production": "r",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 141,
+      "daynight": null,
+      "color": "Y",
+      "production": "b",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 142,
+      "daynight": null,
+      "color": "Y",
+      "production": "c",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 143,
+      "daynight": null,
+      "color": "B",
+      "production": "c",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+      "id": 144,
+      "daynight": null,
+      "color": "G",
+      "production": "c",
+      "prerequisite": null,
+      "reward": null,
+      "imgsrc": null,
+      "set": "base",
+      "type": "sanctuary"
+    },
+    {
+        "id": 145,
+        "daynight": null,
+        "color": "Y",
+        "production": "n",
+        "prerequisite": null,
+        "reward": "1*N",
+        "imgsrc": null,
+        "set": "pfb",
+        "type": "sanctuary"
+      },
+      {
+        "id": 146,
+        "daynight": null,
+        "color": "R",
+        "production": null,
+        "prerequisite": null,
+        "reward": "3*i",
+        "imgsrc": null,
+        "set": "pfb",
+        "type": "sanctuary"
+      },
+      {
+        "id": 147,
+        "daynight": null,
+        "color": "N",
+        "production": "c",
+        "prerequisite": null,
+        "reward": "3*i",
+        "imgsrc": null,
+        "set": "pfb",
+        "type": "sanctuary"
+      },
+      {
+        "id": 148,
+        "daynight": null,
+        "color": "N",
+        "production": "g",
+        "prerequisite": null,
+        "reward": "1*N",
+        "imgsrc": null,
+        "set": "pfb",
+        "type": "sanctuary"
+      },
+      {
+        "id": 149,
+        "daynight": null,
+        "color": "B",
+        "production": null,
+        "prerequisite": null,
+        "reward": "2*N",
+        "imgsrc": null,
+        "set": "pfb",
+        "type": "sanctuary"
+      },
+      {
+        "id": 150,
+        "daynight": null,
+        "color": "G",
+        "production": null,
+        "prerequisite": null,
+        "reward": "3*i",
+        "imgsrc": null,
+        "set": "pfb",
+        "type": "sanctuary"
+      },
+      {
+        "id": 151,
+        "daynight": null,
+        "color": "N",
+        "production": "r",
+        "prerequisite": null,
+        "reward": "1*N",
+        "imgsrc": null,
+        "set": "pfb",
+        "type": "sanctuary"
+      },
+      {
+        "id": 152,
+        "daynight": null,
+        "color": "N",
+        "production": "bb",
+        "prerequisite": null,
+        "reward": null,
+        "imgsrc": null,
+        "set": "pfb",
+        "type": "sanctuary"
+      }
+  ]

@@ -5,12 +5,13 @@ import Image from 'next/image';
 
 interface Card {
     id: number;
-    daynight: string;
+    daynight: string | null;
     color: string;
     production: string | null;
     prerequisite: string | null;
     reward: string | null;
     set: string;
+    type: string;
 }
 
 interface FilterButtonProps {
@@ -32,11 +33,12 @@ const FilterButton = ({ selected, onClick, children }: FilterButtonProps) => (
 export default function FarawayPage() {
     const [cards, setCards] = useState<Card[]>([])
     const [selectedColors, setSelectedColors] = useState<string[]>([]);
-    const [idRange, setIdRange] = useState<[number, number]>([0, 76]);
+    const [idRange, setIdRange] = useState<[number, number]>([0, 152]);
     const [selectedDayNight, setSelectedDayNight] = useState<string[]>([]);
     const [selectedPrerequisites, setSelectedPrerequisites] = useState<string[]>([]);
     const [selectedProduction, setSelectedProduction] = useState<string[]>([]);
     const [selectedSets, setSelectedSets] = useState<string[]>([]);
+    const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
 
     const handleColorChange = (color: string) => {
         setSelectedColors(prev => 
@@ -262,13 +264,19 @@ export default function FarawayPage() {
         return images;
     };
 
+    const renderReward = (reward: string | null) => {
+        if (!reward) return null;
+        return <span>{reward}</span>;
+    };
+
     // Filter cards based on selected colors, day/night, prerequisites, production, and ID range
     const filteredCards = cards.filter(card => 
         (selectedColors.length === 0 || selectedColors.includes(card.color)) &&
-        (selectedDayNight.length === 0 || selectedDayNight.includes(card.daynight)) &&
-        (selectedPrerequisites.length === 0 || selectedPrerequisites.every(p => card.prerequisite?.includes(p))) &&
-        (selectedProduction.length === 0 || selectedProduction.every(p => card.production?.includes(p))) &&
+        (selectedDayNight.length === 0 || (card.daynight && selectedDayNight.includes(card.daynight))) &&
+        (selectedPrerequisites.length === 0 || (card.prerequisite && selectedPrerequisites.every(p => card.prerequisite?.includes(p)))) &&
+        (selectedProduction.length === 0 || (card.production && selectedProduction.every(p => card.production?.includes(p)))) &&
         (selectedSets.length === 0 || selectedSets.includes(card.set)) &&
+        (selectedTypes.length === 0 || selectedTypes.includes(card.type)) &&
         card.id >= idRange[0] && card.id <= idRange[1]
     );
 
@@ -374,6 +382,23 @@ export default function FarawayPage() {
                                 </label>
                             ))}
                         </div>
+                        {/* New Type Filter */}
+                        <div className="mt-4">
+                            <h2 className="font-bold">Filter by Type:</h2>
+                            {['region', 'sanctuary'].map(type => (
+                                <label key={type} className="mr-4">
+                                    <input 
+                                        type="checkbox" 
+                                        value={type} 
+                                        checked={selectedTypes.includes(type)} 
+                                        onChange={() => setSelectedTypes(prev => 
+                                            prev.includes(type) ? prev.filter(t => t !== type) : [...prev, type]
+                                        )} 
+                                    /> 
+                                    {type.charAt(0).toUpperCase() + type.slice(1)}
+                                </label>
+                            ))}
+                        </div>
                     </div>
                 </div>
                 <div className="my-4">
@@ -381,7 +406,7 @@ export default function FarawayPage() {
                     <input
                         type="range"
                         min={0}
-                        max={76}
+                        max={144}
                         value={idRange[0]}
                         onChange={(e) => handleIdRangeChange(e, [Number(e.target.value), idRange[1]])}
                         className="w-full"
@@ -389,7 +414,7 @@ export default function FarawayPage() {
                     <input
                         type="range"
                         min={0}
-                        max={76}
+                        max={144}
                         value={idRange[1]}
                         onChange={(e) => handleIdRangeChange(e, [idRange[0], Number(e.target.value)])}
                         className="w-full"
@@ -408,6 +433,7 @@ export default function FarawayPage() {
                         }}
                     >
                         <h3 className="text-lg font-semibold">ID: {card.id}</h3>
+                        <p>Type: {card.type === 'region' ? 'Region' : 'Sanctuary'}</p>
                         <div className="flex space-x-0">
                             <p>Day/Night: </p>{getImagesFromValues([card.daynight])}
                         </div>
@@ -421,9 +447,10 @@ export default function FarawayPage() {
                             <p>Prerequisite: </p>{getImagesFromValues([card.prerequisite])}
                         </div>
                         <div className="flex space-x-0">
-                            <p>Reward: </p>{getImagesFromValues([card.reward])}
+                            <p>Reward: </p>{renderReward(card.reward)}
                         </div>
                         <p>Set: {card.set === 'base' ? 'Base' : 'People From Below'}</p>
+                        
                     </div>
                 ))}
             </div>
