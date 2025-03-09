@@ -287,16 +287,36 @@ export default function FarawayPage() {
     // Calculate the number of remaining cards based on the current filters
     const remainingCardsCount = filteredCards.length;
 
+    const clearFilters = () => {
+        setSelectedColors([]);
+        setSelectedDayNight([]);
+        setSelectedPrerequisites([]);
+        setSelectedProduction([]);
+        setSelectedSets([]);
+        setSelectedTypes([]);
+        setIdRange([0, 152]); // Reset ID range to initial values
+    };
+
     return (
         <GameLayout>
             <div className="bg-black text-white p-4 sticky top-0 z-10 flex justify-between items-center">
                 <h1 className="text-2xl font-bold">Faraway</h1>
-                <button 
-                    onClick={() => setIsDrawerOpen(true)} 
-                    className="p-2 border rounded bg-gray-700 hover:bg-gray-600"
-                >
-                    <span>Filter</span>
-                </button>
+                <div className="flex items-center">
+                    <button 
+                        onClick={() => setIsDrawerOpen(true)} 
+                        className="p-2 border rounded bg-gray-700 hover:bg-gray-600"
+                    >
+                        <span>Filter</span>
+                    </button>
+                    {selectedColors.length > 0 || selectedDayNight.length > 0 || selectedPrerequisites.length > 0 || selectedProduction.length > 0 || selectedSets.length > 0 || selectedTypes.length > 0 ? (
+                        <button 
+                            onClick={clearFilters} 
+                            className="ml-4 p-2 border rounded bg-gray-500 hover:bg-gray-400 text-white"
+                        >
+                            <span>Clear Filters</span>
+                        </button>
+                    ) : null}
+                </div>
             </div>
             {isDrawerOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-75 z-20 flex justify-center items-start">
@@ -394,19 +414,51 @@ export default function FarawayPage() {
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Set:</h2>
                             <div className="flex items-center">
-                                <input type="checkbox" id="base" className="mr-2" />
-                                <label htmlFor="base" className="mr-4">Base</label>
-                                <input type="checkbox" id="people" className="mr-2" />
-                                <label htmlFor="people">People From Below</label>
+                                <FilterButton 
+                                    key="base" 
+                                    value="base" 
+                                    selected={selectedSets.includes('base')} 
+                                    onClick={() => setSelectedSets(prev => 
+                                        prev.includes('base') ? prev.filter(s => s !== 'base') : [...prev, 'base']
+                                    )}
+                                >
+                                    Base
+                                </FilterButton>
+                                <FilterButton 
+                                    key="people" 
+                                    value="people" 
+                                    selected={selectedSets.includes('people')} 
+                                    onClick={() => setSelectedSets(prev => 
+                                        prev.includes('people') ? prev.filter(s => s !== 'people') : [...prev, 'people']
+                                    )}
+                                >
+                                    People From Below
+                                </FilterButton>
                             </div>
                         </div>
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Type:</h2>
                             <div className="flex items-center">
-                                <input type="checkbox" id="region" className="mr-2" />
-                                <label htmlFor="region" className="mr-4">Region</label>
-                                <input type="checkbox" id="sanctuary" className="mr-2" />
-                                <label htmlFor="sanctuary">Sanctuary</label>
+                                <FilterButton 
+                                    key="region" 
+                                    value="region" 
+                                    selected={selectedTypes.includes('region')} 
+                                    onClick={() => setSelectedTypes(prev => 
+                                        prev.includes('region') ? prev.filter(t => t !== 'region') : [...prev, 'region']
+                                    )}
+                                >
+                                    Region
+                                </FilterButton>
+                                <FilterButton 
+                                    key="sanctuary" 
+                                    value="sanctuary" 
+                                    selected={selectedTypes.includes('sanctuary')} 
+                                    onClick={() => setSelectedTypes(prev => 
+                                        prev.includes('sanctuary') ? prev.filter(t => t !== 'sanctuary') : [...prev, 'sanctuary']
+                                    )}
+                                >
+                                    Sanctuary
+                                </FilterButton>
                             </div>
                         </div>
                         <div className="my-4">
