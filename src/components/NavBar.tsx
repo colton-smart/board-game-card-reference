@@ -24,7 +24,7 @@ export default function NavBar() {
 
   return (
     <Disclosure as="nav" className="navbar">
-      {({ open }) => (
+      {({ open, close }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
@@ -44,7 +44,9 @@ export default function NavBar() {
               <div className="flex-1 flex justify-end">
                 <Link href="/" className="text-white hover:text-gray-300 flex items-center">
                   <div className="text-xl font-bold truncate">
-                    BGCF
+                    {/* Conditional rendering for title based on screen size */}
+                    <span className="block sm:hidden">BGCF</span>
+                    <span className="hidden sm:block">Board Game Card Reference</span>
                   </div>
                   <div className="text-xs text-gray-400 ml-1">by Colton Smart</div>
                 </Link>
@@ -96,6 +98,10 @@ export default function NavBar() {
                   <Link
                     key={item.name}
                     href={item.href}
+                    onClick={() => { 
+                      // Close the Disclosure when a link is clicked
+                      close() 
+                    }}
                     className={classNames(
                       isActive 
                         ? 'navbar a active' 

@@ -269,8 +269,23 @@ export default function FarawayPage() {
     };
 
     const renderReward = (reward: string | null) => {
-        if (!reward) return null;
-        return <span>{reward}</span>;
+        if (!reward || typeof reward !== 'string') return null;
+
+        if (!reward.includes('*')) {
+            return <span className="text-xs sm:text-sm">{reward}</span>;
+        }
+
+        const parts = reward.split('*');
+        const quantity = parts[0];
+        const type = parts[1];
+
+        const images = getImagesFromValues([type], 'small');
+
+        return (
+            <span className="flex items-center text-xs sm:text-sm">
+                {quantity}&nbsp;x&nbsp;{images}
+            </span>
+        );
     };
 
     // Filter cards based on selected colors, day/night, prerequisites, production, and ID range
@@ -300,7 +315,7 @@ export default function FarawayPage() {
     return (
         <GameLayout>
             <div className="bg-black text-white p-4 sticky top-0 z-10 flex justify-between items-center">
-                <h1 className="text-2xl font-bold">Faraway</h1>
+                <h1 className="text-2xl font-bold md:flex justify-center flex-grow text-left md:text-center">Faraway</h1>
                 <div className="flex items-center">
                     <button 
                         onClick={() => setIsDrawerOpen(true)} 
@@ -503,24 +518,24 @@ export default function FarawayPage() {
                             height: 'auto',
                         }}
                     >
-                        <h3 className="text-xs sm:text-sm font-semibold">ID: {card.id}</h3>
-                        <p className="text-xs sm:text-sm">Type: {card.type === 'region' ? 'Region' : 'Sanctuary'}</p>
+                        <h3 className="text-xs sm:text-sm font-semibold">Duration:&nbsp;{card.id}</h3>
+                        <p className="text-xs sm:text-sm">Type:&nbsp;{card.type === 'region' ? 'Region' : 'Sanctuary'}</p>
                         <div className="flex space-x-0">
-                            <p className="text-xs sm:text-sm">Day/Night: </p>{getImagesFromValues([card.daynight], 'small')}
+                            <p className="text-xs sm:text-sm">Day/Night:&nbsp;</p>{getImagesFromValues([card.daynight], 'small')}
                         </div>
                         <div className="flex space-x-0">
-                            <p className="text-xs sm:text-sm">Card Color: </p>{getImagesFromValues([card.color], 'small')}
+                            <p className="text-xs sm:text-sm">Card Color:&nbsp;</p>{getImagesFromValues([card.color], 'small')}
                         </div>
                         <div className="flex space-x-0">
-                            <p className="text-xs sm:text-sm">Production: </p>{getImagesFromValues([card.production], 'small')}
+                            <p className="text-xs sm:text-sm">Production:&nbsp;</p>{getImagesFromValues([card.production], 'small')}
                         </div>
                         <div className="flex space-x-0">
-                            <p className="text-xs sm:text-sm">Prerequisite: </p>{getImagesFromValues([card.prerequisite], 'small')}
+                            <p className="text-xs sm:text-sm">Prerequisite:&nbsp;</p>{getImagesFromValues([card.prerequisite], 'small')}
                         </div>
                         <div className="flex space-x-0">
-                            <p className="text-xs sm:text-sm">Reward: </p>{renderReward(card.reward)}
+                            <p className="text-xs sm:text-sm">Reward:&nbsp;</p>{renderReward(card.reward)}
                         </div>
-                        <p className="text-xs sm:text-sm">Set: {card.set === 'base' ? 'Base' : 'People From Below'}</p>
+                        <p className="text-xs sm:text-sm">Set:&nbsp;{card.set === 'base' ? 'Base' : 'People From Below'}</p>
                     </div>
                 ))}
             </div>
