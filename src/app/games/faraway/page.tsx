@@ -19,11 +19,12 @@ interface FilterButtonProps {
     selected: boolean;
     onClick: () => void;
     children: React.ReactNode;
+    className?: string;
 }
 
-const FilterButton = ({ selected, onClick, children }: FilterButtonProps) => (
+const FilterButton = ({ selected, onClick, children, className }: FilterButtonProps) => (
     <button 
-        className={`mr-4 p-2 border rounded ${selected ? 'bg-blue-500' : 'bg-gray-200'}`} 
+        className={`mr-4 p-2 border rounded ${selected ? 'bg-blue-500' : 'bg-gray-200'} ${className || ''}`} 
         onClick={onClick}
     >
         {children}
@@ -39,6 +40,7 @@ export default function FarawayPage() {
     const [selectedProduction, setSelectedProduction] = useState<string[]>([]);
     const [selectedSets, setSelectedSets] = useState<string[]>([]);
     const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
     const handleColorChange = (color: string) => {
         setSelectedColors(prev => 
@@ -93,8 +95,10 @@ export default function FarawayPage() {
         }
     };
 
-    const getImagesFromValues = (values: (string | null)[]) => {
+    const getImagesFromValues = (values: (string | null)[], size: 'small' | 'default' = 'default') => {
         const images: JSX.Element[] = [];
+        const imgSize = size === 'small' ? 20 : 30; // Set smaller size for mobile
+
         for (const value of values) {
             if (!value) continue;
             for (const char of value) {
@@ -104,8 +108,8 @@ export default function FarawayPage() {
                             <Image
                                 key={`b-${images.length}`}
                                 src="/board-game-card-reference/images/faraway_assets/uddu_stone.png"
-                                width={30}
-                                height={30}
+                                width={imgSize}
+                                height={imgSize}
                                 alt="Uddu Stone"
                                 className="object-contain"
                             />
@@ -116,8 +120,8 @@ export default function FarawayPage() {
                             <Image
                                 key={`g-${images.length}`}
                                 src="/board-game-card-reference/images/faraway_assets/goldlog_thistle.png"
-                                width={30}
-                                height={30}
+                                width={imgSize}
+                                height={imgSize}
                                 alt="Goldlog Thistle"
                                 className="object-contain"
                             />
@@ -128,8 +132,8 @@ export default function FarawayPage() {
                             <Image
                                 key={`r-${images.length}`}
                                 src="/board-game-card-reference/images/faraway_assets/okiko_chimera.png"
-                                width={30}
-                                height={30}
+                                width={imgSize}
+                                height={imgSize}
                                 alt="Okiko Chimera"
                                 className="object-contain"
                             />
@@ -140,8 +144,8 @@ export default function FarawayPage() {
                             <Image
                                 key={`c-${images.length}`}
                                 src="/board-game-card-reference/images/faraway_assets/clue.png"
-                                width={30}
-                                height={30}
+                                width={imgSize}
+                                height={imgSize}
                                 alt="Clue"
                                 className="object-contain"
                             />
@@ -152,8 +156,8 @@ export default function FarawayPage() {
                             <Image
                                 key={`B-${images.length}`}
                                 src="/board-game-card-reference/images/faraway_assets/b_card.png"
-                                width={30}
-                                height={30}
+                                width={imgSize}
+                                height={imgSize}
                                 alt="Blue Card"
                                 className="object-contain"
                             />
@@ -164,8 +168,8 @@ export default function FarawayPage() {
                             <Image
                                 key={`s-${images.length}`}
                                 src="/board-game-card-reference/images/faraway_assets/card_set.png"
-                                width={30}
-                                height={30}
+                                width={imgSize}
+                                height={imgSize}
                                 alt="Four Color Card Set"
                                 className="object-contain"
                             />
@@ -176,8 +180,8 @@ export default function FarawayPage() {
                             <Image
                                 key={`d-${images.length}`}
                                 src="/board-game-card-reference/images/faraway_assets/day.png"
-                                width={30}
-                                height={30}
+                                width={imgSize}
+                                height={imgSize}
                                 alt="Day"
                                 className="object-contain"
                             />
@@ -188,8 +192,8 @@ export default function FarawayPage() {
                             <Image
                                 key={`G-${images.length}`}
                                 src="/board-game-card-reference/images/faraway_assets/g_card.png"
-                                width={30}
-                                height={30}
+                                width={imgSize}
+                                height={imgSize}
                                 alt="Green Card"
                                 className="object-contain"
                             />
@@ -200,8 +204,8 @@ export default function FarawayPage() {
                             <Image
                                 key={`i-${images.length}`}
                                 src="/board-game-card-reference/images/faraway_assets/icon_set.png"
-                                width={40}
-                                height={30}
+                                width={imgSize}
+                                height={imgSize}
                                 alt="Resource Set"
                                 className="object-contain"
                             />
@@ -212,8 +216,8 @@ export default function FarawayPage() {
                             <Image
                                 key={`N-${images.length}`}
                                 src="/board-game-card-reference/images/faraway_assets/n_card.png"
-                                width={30}
-                                height={30}
+                                width={imgSize}
+                                height={imgSize}
                                 alt="Gray Card"
                                 className="object-contain"
                             />
@@ -224,8 +228,8 @@ export default function FarawayPage() {
                             <Image
                                 key={`n-${images.length}`}
                                 src="/board-game-card-reference/images/faraway_assets/night.png"
-                                width={30}
-                                height={30}
+                                width={imgSize}
+                                height={imgSize}
                                 alt="Night"
                                 className="object-contain"
                             />
@@ -236,8 +240,8 @@ export default function FarawayPage() {
                             <Image
                                 key={`R-${images.length}`}
                                 src="/board-game-card-reference/images/faraway_assets/r_card.png"
-                                width={30}
-                                height={30}
+                                width={imgSize}
+                                height={imgSize}
                                 alt="Red Card"
                                 className="object-contain"
                             />
@@ -248,8 +252,8 @@ export default function FarawayPage() {
                             <Image
                                 key={`Y-${images.length}`}
                                 src="/board-game-card-reference/images/faraway_assets/y_card.png"
-                                width={30}
-                                height={30}
+                                width={imgSize}
+                                height={imgSize}
                                 alt="Yellow Card"
                                 className="object-contain"
                             />
@@ -280,32 +284,56 @@ export default function FarawayPage() {
         card.id >= idRange[0] && card.id <= idRange[1]
     );
 
+    // Calculate the number of remaining cards based on the current filters
+    const remainingCardsCount = filteredCards.length;
+
     return (
         <GameLayout>
-            <div className="bg-black text-white p-4 sticky top-0 z-10">
-                <div className="flex justify-between items-center">
-                    <h1 className="text-2xl font-bold">Faraway</h1>
-                    <div className="flex gap-4">
+            <div className="bg-black text-white p-4 sticky top-0 z-10 flex justify-between items-center">
+                <h1 className="text-2xl font-bold">Faraway</h1>
+                <button 
+                    onClick={() => setIsDrawerOpen(true)} 
+                    className="p-2 border rounded bg-gray-700 hover:bg-gray-600"
+                >
+                    <span>Filter</span>
+                </button>
+            </div>
+            {isDrawerOpen && (
+                <div className="fixed inset-0 bg-black bg-opacity-75 z-20 flex justify-center items-start">
+                    <div className="bg-white text-black w-full max-w-md p-4 rounded-t-lg">
+                        <div className="flex justify-between items-center mb-4">
+                            <h2 className="text-lg font-bold text-center flex-grow">
+                                Filters ({remainingCardsCount} results)
+                            </h2>
+                            <button 
+                                onClick={() => setIsDrawerOpen(false)} 
+                                className="text-gray-500 hover:text-gray-800"
+                            >
+                                <span className="text-lg font-bold">X</span>
+                            </button>
+                        </div>
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Card Color:</h2>
-                            {['B', 'R', 'G', 'Y', 'N'].map(color => (
-                                <FilterButton 
-                                    key={color} 
-                                    value={color} 
-                                    selected={selectedColors.includes(color)} 
-                                    onClick={() => handleColorChange(color)}
-                                >
-                                    <Image
-                                        src={`/board-game-card-reference/images/faraway_assets/${color.toLowerCase()}_card.png`}
-                                        width={40}
-                                        height={40}
-                                        alt={`${color} Card`}
-                                        className="object-contain"
-                                    />
-                                </FilterButton>
-                            ))}
+                            <div className="flex flex-wrap justify-between">
+                                {['B', 'R', 'G', 'Y', 'N'].map(color => (
+                                    <FilterButton 
+                                        key={color} 
+                                        value={color} 
+                                        selected={selectedColors.includes(color)} 
+                                        onClick={() => handleColorChange(color)}
+                                        className="flex-1 m-1"
+                                    >
+                                        <Image
+                                            src={`/board-game-card-reference/images/faraway_assets/${color.toLowerCase()}_card.png`}
+                                            width={40}
+                                            height={40}
+                                            alt={`${color} Card`}
+                                            className="object-contain"
+                                        />
+                                    </FilterButton>
+                                ))}
+                            </div>
                         </div>
-                        {/* New Day/Night Filter */}
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Day / Night:</h2>
                             {['d', 'n'].map(dayNight => (
@@ -325,7 +353,6 @@ export default function FarawayPage() {
                                 </FilterButton>
                             ))}
                         </div>
-                        {/* New Prerequisite Filter with Buttons */}
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Prerequisite:</h2>
                             {['b', 'r', 'g'].map(prerequisite => (
@@ -345,7 +372,6 @@ export default function FarawayPage() {
                                 </FilterButton>
                             ))}
                         </div>
-                        {/* New Production Filter */}
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Production:</h2>
                             {['b', 'r', 'g', 'c'].map(production => (
@@ -365,92 +391,84 @@ export default function FarawayPage() {
                                 </FilterButton>
                             ))}
                         </div>
-                        {/* New Set Filter */}
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Set:</h2>
-                            {['base', 'pfb'].map(set => (
-                                <label key={set} className="mr-4">
-                                    <input 
-                                        type="checkbox" 
-                                        value={set} 
-                                        checked={selectedSets.includes(set)} 
-                                        onChange={() => setSelectedSets(prev => 
-                                            prev.includes(set) ? prev.filter(s => s !== set) : [...prev, set]
-                                        )} 
-                                    /> 
-                                    {set === 'base' ? 'Base' : 'People From Below'}
-                                </label>
-                            ))}
+                            <div className="flex items-center">
+                                <input type="checkbox" id="base" className="mr-2" />
+                                <label htmlFor="base" className="mr-4">Base</label>
+                                <input type="checkbox" id="people" className="mr-2" />
+                                <label htmlFor="people">People From Below</label>
+                            </div>
                         </div>
-                        {/* New Type Filter */}
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Type:</h2>
-                            {['region', 'sanctuary'].map(type => (
-                                <label key={type} className="mr-4">
-                                    <input 
-                                        type="checkbox" 
-                                        value={type} 
-                                        checked={selectedTypes.includes(type)} 
-                                        onChange={() => setSelectedTypes(prev => 
-                                            prev.includes(type) ? prev.filter(t => t !== type) : [...prev, type]
-                                        )} 
-                                    /> 
-                                    {type.charAt(0).toUpperCase() + type.slice(1)}
-                                </label>
-                            ))}
+                            <div className="flex items-center">
+                                <input type="checkbox" id="region" className="mr-2" />
+                                <label htmlFor="region" className="mr-4">Region</label>
+                                <input type="checkbox" id="sanctuary" className="mr-2" />
+                                <label htmlFor="sanctuary">Sanctuary</label>
+                            </div>
                         </div>
+                        <div className="my-4">
+                            <label className="block mb-2">Filter by ID:</label>
+                            <input
+                                type="range"
+                                min={0}
+                                max={144}
+                                value={idRange[0]}
+                                onChange={(e) => handleIdRangeChange(e, [Number(e.target.value), idRange[1]])}
+                                className="w-full"
+                            />
+                            <input
+                                type="range"
+                                min={0}
+                                max={144}
+                                value={idRange[1]}
+                                onChange={(e) => handleIdRangeChange(e, [idRange[0], Number(e.target.value)])}
+                                className="w-full"
+                            />
+                        </div>
+                        <button 
+                            onClick={() => {
+                                // Handle apply logic here
+                                setIsDrawerOpen(false); // Close the drawer after applying
+                            }} 
+                            className="mt-4 w-full p-2 border rounded bg-blue-500 text-white font-bold"
+                        >
+                            Apply
+                        </button>
                     </div>
                 </div>
-                <div className="my-4">
-                    <label className="block mb-2">Filter by ID:</label>
-                    <input
-                        type="range"
-                        min={0}
-                        max={144}
-                        value={idRange[0]}
-                        onChange={(e) => handleIdRangeChange(e, [Number(e.target.value), idRange[1]])}
-                        className="w-full"
-                    />
-                    <input
-                        type="range"
-                        min={0}
-                        max={144}
-                        value={idRange[1]}
-                        onChange={(e) => handleIdRangeChange(e, [idRange[0], Number(e.target.value)])}
-                        className="w-full"
-                    />
-                </div>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+            )}
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
                 {filteredCards.map(card => (
                     <div
                         key={card.id}
-                        className="rounded-lg shadow-md overflow-hidden p-4"
+                        className="rounded-lg shadow-md overflow-hidden p-2"
                         style={{
                             backgroundColor: getBackgroundColor(card.color),
                             width: '100%',
-                            height: '250px',
+                            height: 'auto',
                         }}
                     >
-                        <h3 className="text-lg font-semibold">ID: {card.id}</h3>
-                        <p>Type: {card.type === 'region' ? 'Region' : 'Sanctuary'}</p>
+                        <h3 className="text-xs sm:text-sm font-semibold">ID: {card.id}</h3>
+                        <p className="text-xs sm:text-sm">Type: {card.type === 'region' ? 'Region' : 'Sanctuary'}</p>
                         <div className="flex space-x-0">
-                            <p>Day/Night: </p>{getImagesFromValues([card.daynight])}
+                            <p className="text-xs sm:text-sm">Day/Night: </p>{getImagesFromValues([card.daynight], 'small')}
                         </div>
                         <div className="flex space-x-0">
-                            <p>Card Color: </p>{getImagesFromValues([card.color])}
+                            <p className="text-xs sm:text-sm">Card Color: </p>{getImagesFromValues([card.color], 'small')}
                         </div>
                         <div className="flex space-x-0">
-                            <p>Production: </p>{getImagesFromValues([card.production])}
+                            <p className="text-xs sm:text-sm">Production: </p>{getImagesFromValues([card.production], 'small')}
                         </div>
                         <div className="flex space-x-0">
-                            <p>Prerequisite: </p>{getImagesFromValues([card.prerequisite])}
+                            <p className="text-xs sm:text-sm">Prerequisite: </p>{getImagesFromValues([card.prerequisite], 'small')}
                         </div>
                         <div className="flex space-x-0">
-                            <p>Reward: </p>{renderReward(card.reward)}
+                            <p className="text-xs sm:text-sm">Reward: </p>{renderReward(card.reward)}
                         </div>
-                        <p>Set: {card.set === 'base' ? 'Base' : 'People From Below'}</p>
-                        
+                        <p className="text-xs sm:text-sm">Set: {card.set === 'base' ? 'Base' : 'People From Below'}</p>
                     </div>
                 ))}
             </div>

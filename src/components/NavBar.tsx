@@ -1,15 +1,11 @@
 "use client"
 
-import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const games = [
-  { name: 'Terraforming Mars', href: '/games/terraforming-mars' },
-  { name: 'Ark Nova', href: '/games/ark-nova' },
-  { name: 'Wingspan', href: '/games/wingspan' },
   { name: 'Faraway', href: '/games/faraway' },
 ]
 
@@ -44,11 +40,13 @@ export default function NavBar() {
                 </Disclosure.Button>
               </div>
               
-              {/* Logo and title section */}
-              <div className="flex flex-shrink-0 items-center">
-                <Link href="/" className="text-white hover:text-gray-300">
-                  <div className="text-xl font-bold">Board Game Card Reference</div>
-                  <div className="text-xs text-gray-400">by Colton Smart</div>
+              {/* Center section to push title to the right */}
+              <div className="flex-1 flex justify-end">
+                <Link href="/" className="text-white hover:text-gray-300 flex items-center">
+                  <div className="text-xl font-bold truncate">
+                    BGCF
+                  </div>
+                  <div className="text-xs text-gray-400 ml-1">by Colton Smart</div>
                 </Link>
               </div>
 
