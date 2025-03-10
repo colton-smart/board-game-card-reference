@@ -409,22 +409,25 @@ export default function FarawayPage() {
                         </div>
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Production:</h2>
-                            {['b', 'r', 'g', 'c'].map(production => (
-                                <FilterButton 
-                                    key={production} 
-                                    value={production} 
-                                    selected={selectedProduction.includes(production)} 
-                                    onClick={() => handleProductionChange(production)}
-                                >
-                                    <Image
-                                        src={`/board-game-card-reference/images/faraway_assets/${production === 'b' ? 'uddu_stone' : production === 'r' ? 'okiko_chimera' : production === 'g' ? 'goldlog_thistle' : 'clue'}.png`}
-                                        width={40}
-                                        height={40}
-                                        alt={production === 'b' ? 'Uddu Stone' : production === 'r' ? 'Okiko Chimera' : production === 'g' ? 'Goldlog Thistle' : 'Clue'}
-                                        className="object-contain"
-                                    />
-                                </FilterButton>
-                            ))}
+                            <div className="flex flex-wrap justify-between">
+                                {['b', 'r', 'g', 'c', 'n'].map(production => (
+                                    <FilterButton 
+                                        key={production} 
+                                        value={production} 
+                                        selected={selectedProduction.includes(production)} 
+                                        onClick={() => handleProductionChange(production)}
+                                        className="flex-1 m-1"
+                                    >
+                                        <Image
+                                            src={`/board-game-card-reference/images/faraway_assets/${production === 'b' ? 'uddu_stone' : production === 'r' ? 'okiko_chimera' : production === 'g' ? 'goldlog_thistle' : production === 'c' ? 'clue' : 'night'}.png`}
+                                            width={40}
+                                            height={40}
+                                            alt={production === 'b' ? 'Uddu Stone' : production === 'r' ? 'Okiko Chimera' : production === 'g' ? 'Goldlog Thistle' : production === 'c' ? 'Clue' : 'Night'}
+                                            className="object-contain"
+                                        />
+                                    </FilterButton>
+                                ))}
+                            </div>
                         </div>
                         <div className="mt-4">
                             <h2 className="font-bold">Filter by Set:</h2>
@@ -477,7 +480,7 @@ export default function FarawayPage() {
                             </div>
                         </div>
                         <div className="my-4">
-                            <label className="block mb-2">Filter by ID:</label>
+                            <label className="block mb-2">Filter by Duration:</label>
                             <input
                                 type="range"
                                 min={0}

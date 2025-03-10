@@ -45,7 +45,7 @@ export default function NavBar() {
                 <Link href="/" className="text-white hover:text-gray-300 flex items-center">
                   <div className="text-xl font-bold truncate">
                     {/* Conditional rendering for title based on screen size */}
-                    <span className="block sm:hidden">BGCF</span>
+                    <span className="block sm:hidden">BGCR</span>
                     <span className="hidden sm:block">Board Game Card Reference</span>
                   </div>
                   <div className="text-xs text-gray-400 ml-1">by Colton Smart</div>
